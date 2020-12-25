@@ -1,0 +1,401 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  cursor: crosshair;
+}
+
+#index {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+#index a {
+  text-decoration: none;
+  color: black;
+}
+
+#index .giddyup {
+  font-family: giddyup-std, sans-serif;
+  font-size: 3.15rem;
+}
+
+@media (hover: hover) and (min-width: 540px) {
+  #index a:hover {
+    font-family: giddyup-std, sans-serif;
+    font-size: 3.15rem;
+    line-height: 0;
+    cursor: crosshair;
+  }
+  #index a:hover img {
+    margin-top: 2.5px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  #index {
+    font-size: 2.5rem;
+  }
+  #index .giddyup {
+    font-size: 2.5rem;
+  }
+  #index #name {
+    font-family: giddyup-std, sans-serif;
+  }
+}
+
+#grid-container {
+  font-size: 3rem;
+}
+
+#left-container .title {
+  text-transform: uppercase;
+  font-family: giddyup-std, sans-serif;
+}
+
+#left-container .author {
+  font-size: 2.75rem;
+  font-family: freight-big-pro, serif;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+#index {
+  margin: 7.5rem 8rem 7.5rem 7.5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  line-height: 1.125;
+}
+
+#index #top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#index #middle {
+  margin-top: 15rem;
+  white-space: nowrap;
+}
+
+#index #bottom {
+  margin-top: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#index #bottom #description {
+  width: 350px;
+}
+
+#index #bottom #description p:not(:last-child) {
+  margin-bottom: 3.75rem;
+}
+
+#index #bottom #links {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#index #bottom #links .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bottom #links .icons img {
+  margin: 2px 0 0 1.25rem;
+  padding: 0.5px;
+}
+
+#index #bottom #links .copyright {
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  #index #middle {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  #index #middle {
+    margin-top: 11.25rem;
+  }
+  #index #middle .project:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  #index #bottom {
+    margin-top: 11.25rem;
+  }
+}
+
+@media (max-width: 540px) {
+  #index {
+    margin: 7.5rem 0 7.5rem 3.75rem;
+  }
+  #index #top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    white-space: nowrap;
+  }
+  #index #middle {
+    margin-top: 3.75rem;
+    width: 250px;
+  }
+  #index #bottom {
+    margin-top: 3.75rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #index #bottom #description {
+    width: 60%;
+  }
+  #index #bottom #description p:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  #index #bottom #links {
+    margin-top: 3.75rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #index #bottom #links .icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #index #bottom #links .icons img {
+    margin-left: 0;
+    margin-right: 1.25rem;
+  }
+}
+
+#grid-container {
+  margin: 0 7.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(min-content, 60vw) minmax(min-content, 40vw);
+      grid-template-columns: minmax(-webkit-min-content, 60vw) minmax(-webkit-min-content, 40vw);
+      grid-template-columns: minmax(min-content, 60vw) minmax(min-content, 40vw);
+}
+
+#left-container {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+#left-container .preview {
+  margin-top: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#left-container .desktop {
+  border: 1px solid black;
+  width: 500px;
+  height: 315.5px;
+  overflow: hidden;
+}
+
+#left-container .desktop video {
+  position: relative;
+  width: 502px;
+  margin-left: -1px;
+}
+
+#left-container .mobile {
+  height: 330px;
+  margin-left: 25px;
+  overflow: hidden;
+}
+
+#left-container .mobile video {
+  position: relative;
+  margin-top: -2px;
+  height: 332px;
+}
+
+#left-container .writeup {
+  margin-top: 1.75rem;
+  font-size: 1.5rem;
+}
+
+#right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 3.75rem;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#right-container #sections {
+  padding-left: 40%;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+
+#right-container #sections .overview {
+  padding-top: 3.75rem;
+}
+
+#right-container #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 7.5rem;
+}
+
+#right-container #links .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#right-container #links .icons img {
+  margin: 2px 0 0 1.25rem;
+  padding: 0.5px;
+}
+
+#right-container #links .copyright {
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  #project-page #grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  #project-page #left-container {
+    background-color: red;
+  }
+}
+
+@media (max-width: 768px) {
+  #project-page #left-container {
+    background-color: green;
+  }
+}
+
+.icons img {
+  height: 18px;
+}
+
+#mail {
+  height: 14px;
+}
+/*# sourceMappingURL=style.css.map */
