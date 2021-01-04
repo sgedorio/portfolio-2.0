@@ -101,9 +101,6 @@ html {
 //project pages
 #grid-container {
     font-size: 3rem;
-}
-
-#left-container {
     .title { 
         text-transform: uppercase;
         font-family: giddyup-std, sans-serif;
@@ -115,5 +112,26 @@ html {
         font-weight: 300;
         font-style: italic; 
         text-transform: lowercase;
+    }
+
+    .writeup {
+        h1 {
+            font-size: 2.75rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2rem;
+            // text-transform: uppercase;
+            // font-weight: 400;
+            // font-size: 2.75rem;
+            // font-family: freight-big-pro, serif;
+            // font-weight: 300;
+            // font-style: italic; 
+            // text-transform: lowercase;
+        }
+        
+        font-size: 1.5rem;
+        line-height: 1.25;
     }
 }
