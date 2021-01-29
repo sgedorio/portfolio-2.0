@@ -63,7 +63,7 @@ html {
 
 #index a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 #index .giddyup {
@@ -113,9 +113,18 @@ html {
   text-transform: lowercase;
 }
 
+#grid-container .author a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #grid-container .writeup {
   font-size: 1.5rem;
   line-height: 1.25;
+}
+
+#grid-container .writeup a {
+  color: inherit;
 }
 
 #grid-container .writeup h1 {
@@ -125,6 +134,42 @@ html {
 
 #grid-container .writeup h2 {
   font-size: 2rem;
+}
+
+#grid-container .writeup ol {
+  list-style-type: decimal;
+}
+
+#grid-container .writeup ul {
+  list-style-type: circle;
+}
+
+#grid-container .writeup th {
+  font-size: 2rem;
+}
+
+#grid-container .writeup .caption {
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#grid-container #sections a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#grid-container .wdc-intro {
+  font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+}
+
+#grid-container .wdc-intro p {
+  margin-top: 2rem;
+  line-height: 1.25;
 }
 
 #index {
@@ -338,23 +383,29 @@ html {
   margin-left: -1px;
 }
 
-#project-page .mobile {
-  width: 170.61px;
+#project-page .mobile, #project-page .mobile-large {
   overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-#project-page .mobile video {
+#project-page .mobile video, #project-page .mobile-large video {
   position: relative;
-  margin-top: -2px;
+  margin-top: -2.5px;
   width: 101%;
+}
+
+#project-page .mobile {
+  width: 170.61px;
+}
+
+#project-page .mobile-large {
+  width: 225px;
 }
 
 #project-page .writeup {
   padding-bottom: 7.5rem;
   padding-top: 1.75rem;
-  width: 85%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -363,15 +414,8 @@ html {
   grid-row: 4 / 5;
 }
 
-#project-page .writeup h1, #project-page .writeup h2 {
-  margin-bottom: 1rem;
-}
-
-#project-page .writeup .section {
-  margin-bottom: 5rem;
-}
-
 #project-page .writeup .overview {
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +432,7 @@ html {
 }
 
 #project-page .writeup .overview .overview-right {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,8 +445,143 @@ html {
           justify-content: space-between;
 }
 
-#project-page .writeup .overview .overview-right .section {
+#project-page .writeup .overview .overview-right .timeline, #project-page .writeup .overview .overview-right .tools {
+  margin-bottom: 1.5rem;
+}
+
+#project-page .writeup h1 {
+  margin-bottom: 1.5rem;
+}
+
+#project-page .writeup h2 {
+  width: 85%;
+  margin-bottom: 0.75rem;
+}
+
+#project-page .writeup p, #project-page .writeup ol, #project-page .writeup ul {
+  width: 85%;
+  margin-bottom: 1.5rem;
+}
+
+#project-page .writeup ol, #project-page .writeup ul {
+  padding-left: 3rem;
+}
+
+#project-page .writeup ol li, #project-page .writeup ul li {
+  padding-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+#project-page .writeup table {
+  margin: 2.5rem 0 2.5rem 0;
+  border-collapse: collapse;
+}
+
+#project-page .writeup table, #project-page .writeup th, #project-page .writeup td {
+  border: 1px solid black;
+}
+
+#project-page .writeup th, #project-page .writeup td {
+  text-align: left;
+  padding: 1rem;
+}
+
+#project-page .writeup .section {
+  margin-bottom: 5rem;
+}
+
+#project-page .writeup .last-child {
   margin-bottom: 0;
+}
+
+#project-page .writeup .figure {
+  margin: 2.5rem auto;
+}
+
+#project-page .writeup .figure img {
+  width: 90%;
+}
+
+#project-page .writeup .figure .caption {
+  margin-top: 0.5rem;
+  width: 90%;
+  text-align: center;
+}
+
+#project-page .writeup .figure-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#project-page .writeup .figure-video :not(:first-child) {
+  margin-left: 25px;
+}
+
+#project-page .writeup .figure-video .desktop {
+  width: 500px;
+  height: 315.04px;
+}
+
+#project-page .writeup .wwr-values {
+  margin: 5rem auto;
+}
+
+#project-page .writeup .wwr-values ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#project-page .writeup .wwr-values ul :nth-child(1) {
+  background-color: #F15152;
+}
+
+#project-page .writeup .wwr-values ul :nth-child(2) {
+  background-color: #FFFD82;
+}
+
+#project-page .writeup .wwr-values ul :nth-child(3) {
+  background-color: #C0D8E0;
+}
+
+#project-page .writeup .wwr-values li {
+  padding: 10% 7.5%;
+  border: 1px dashed black;
+  border-radius: 50%;
+}
+
+#project-page .writeup .quality {
+  background-color: #F15152;
+  padding: 1px;
+}
+
+#project-page .writeup .inclusive {
+  background-color: #FFFD82;
+  padding: 1px;
+}
+
+#project-page .writeup .eclectic {
+  background-color: #C0D8E0;
+  padding: 1px;
+}
+
+#project-page .writeup #ideation-table {
+  display: none;
 }
 
 #project-page #sections {
@@ -414,13 +594,14 @@ html {
   text-align: right;
   text-transform: uppercase;
   font-size: 1.75rem;
+  white-space: nowrap;
   top: 3.75rem;
   position: -webkit-sticky;
   position: sticky;
 }
 
-#project-page #sections .overview {
-  padding-top: 3.75rem;
+#project-page #sections .first-child {
+  margin-top: 3.75rem;
 }
 
 #project-page #links {
@@ -467,11 +648,69 @@ html {
   white-space: nowrap;
 }
 
+#project-page .wdc-intro {
+  width: 350px;
+  margin-bottom: 15rem;
+  margin-top: 0.10rem;
+}
+
+#project-page .wdc p {
+  width: 350px;
+  margin-bottom: 2.5rem;
+}
+
+#project-page .wdc img, #project-page .wdc video {
+  width: 120%;
+}
+
+#project-page .wdc img:not(:last-child), #project-page .wdc video:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+#project-page .wdc .two-col-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 120%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+#project-page .wdc .two-col-grid :nth-child(odd) {
+  padding-right: 0.75rem;
+}
+
+#project-page .wdc .two-col-grid :nth-child(even) {
+  padding-left: 0.75rem;
+}
+
+#project-page .wdc .two-col-grid img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#project-page .wdc:not(:last-child) {
+  margin-bottom: 15rem;
+}
+
 @media (max-width: 1024px) {
   #project-page #grid-container {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     grid-auto-rows: auto;
+  }
+  #project-page .wdc-intro {
+    margin-bottom: 2.25rem;
+  }
+  #project-page .wdc img, #project-page .wdc video {
+    width: 100%;
+  }
+  #project-page .wdc .two-col-grid {
+    width: 100%;
+  }
+  #project-page .wdc .two-col-grid img {
+    width: 100%;
   }
   #project-page .writeup {
     -ms-grid-row: 5;
@@ -490,8 +729,8 @@ html {
     top: auto;
     position: static;
   }
-  #project-page #sections .overview {
-    padding-top: 1.75rem;
+  #project-page #sections .first-child {
+    margin-top: 1rem;
   }
   #project-page #links {
     -ms-grid-column: 1;
@@ -515,6 +754,9 @@ html {
     margin-left: 3.75rem;
     margin-right: 3.75rem;
   }
+  #project-page .visual {
+    margin-bottom: 1.5rem;
+  }
   #project-page .visual :not(:first-child) {
     margin-left: 3%;
   }
@@ -531,6 +773,20 @@ html {
   }
   #project-page .mobile video {
     width: 101%;
+  }
+  #project-page .writeup .figure-video {
+    height: 100%;
+  }
+  #project-page .writeup .figure-video .desktop {
+    width: 400px;
+    height: 253px;
+  }
+  #project-page .writeup .figure-video .mobile {
+    width: 141.04px;
+    height: 274.45px;
+  }
+  #project-page #sections {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -556,13 +812,36 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   #project-page .writeup .overview .overview-left {
     width: 100%;
+    margin-bottom: 1.5rem;
   }
-  #project-page .writeup .overview .overview-right .section {
-    margin-bottom: 0.75rem;
+  #project-page .writeup .overview .overview-right {
+    width: 100%;
+  }
+  #project-page .writeup .figure img {
+    width: 100%;
+  }
+  #project-page .writeup .figure .caption {
+    width: 100%;
+  }
+  #project-page .writeup .figure-video {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #project-page .writeup .figure-video .desktop {
+    width: 285px;
+    height: 180px;
+  }
+  #project-page .writeup .figure-video .mobile {
+    margin-top: 2.5rem;
+  }
+  #project-page .writeup p, #project-page .writeup ol, #project-page .writeup ul, #project-page .writeup h2 {
+    width: 100%;
   }
 }
 
@@ -572,5 +851,20 @@ html {
 
 #mail {
   height: 14px;
+}
+
+#ideation-button {
+  cursor: pointer;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 2px solid #3240DD;
+  background-color: #F2F4FF;
+  border-radius: 20px;
+  color: #3240DD;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.16);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.16);
 }
 /*# sourceMappingURL=style.css.map */

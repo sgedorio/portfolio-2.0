@@ -63,7 +63,7 @@ html {
     text-transform: uppercase;
     a {
         text-decoration: none;
-        color: black;
+        color: inherit;
     }
 
     .giddyup {
@@ -107,6 +107,11 @@ html {
     }
 
     .author {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         font-size: 2.75rem;
         font-family: freight-big-pro, serif;
         font-weight: 300;
@@ -115,6 +120,10 @@ html {
     }
 
     .writeup {
+        a {
+            color: inherit;
+        }
+
         h1 {
             font-size: 2.75rem;
             text-transform: uppercase;
@@ -122,16 +131,51 @@ html {
 
         h2 {
             font-size: 2rem;
-            // text-transform: uppercase;
-            // font-weight: 400;
-            // font-size: 2.75rem;
-            // font-family: freight-big-pro, serif;
-            // font-weight: 300;
-            // font-style: italic; 
-            // text-transform: lowercase;
         }
-        
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        th {
+            // font-weight: 600;
+            font-size: 2rem;
+        }
+
+        .caption {
+            font-size: 2rem;
+            text-transform: lowercase;
+
+            font-family: freight-big-pro, serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
         font-size: 1.5rem;
         line-height: 1.25;
     }
+
+    #sections {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    //WDC (non-case-study)
+    .wdc-intro {
+        font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
+        font-size: 2.75rem;
+        text-transform: uppercase;
+
+        p {
+            margin-top: 2rem;
+            line-height: 1.25;
+        }
+    }
 }
+
