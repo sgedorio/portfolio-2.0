@@ -728,6 +728,7 @@ html {
     text-align: left;
     top: auto;
     position: static;
+    margin-bottom: 1.5rem;
   }
   #project-page #sections .first-child {
     margin-top: 1rem;
