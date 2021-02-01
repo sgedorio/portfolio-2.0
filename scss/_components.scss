@@ -6,6 +6,39 @@
     height: 14px; 
 }
 
+.solution-button {
+    cursor: pointer;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 2.5rem;
+    // padding: 1rem 7.5rem;
+    border-radius: 20px;
+    width: fit-content;
+    -webkit-box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.16); 
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.16);
+    text-transform: uppercase;
+    font-size: 2rem;
+    white-space: nowrap;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.sm-button {
+    border: 2px solid #3240DD;
+    background-color: #F2F4FF;
+    color: #3240DD;
+}
+
+.wwr-button {
+    border: 2px solid black;
+    background-color: #F7EDE8;
+    // background-color: #FDA7A3;
+    color: #F16662;
+    // color: black;
+}
+
 #ideation-button {
     cursor: pointer;
     margin: 2rem 0;
