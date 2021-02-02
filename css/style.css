@@ -604,6 +604,7 @@ html {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
+  text-align: right;
   -ms-grid-column-align: end;
       justify-self: end;
   text-transform: uppercase;
