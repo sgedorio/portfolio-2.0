@@ -202,6 +202,10 @@ $column-spacing: 15rem;
         flex-flow: row nowrap;
         margin-bottom: 2.5rem;
 
+        h2 {
+            margin-top: 0;
+        }
+
         .overview-left {
             width: 50%;
             margin-right: 75px;
@@ -219,12 +223,21 @@ $column-spacing: 15rem;
         }
     }
 
+    .contributions h2 {
+        margin-top: 0;
+    }
+
         h1 {
             margin-bottom: 1.5rem;
             // margin-bottom: 50rem;
         }
 
         h2 {
+            //h2 margin-top spacing but not for those under h1 headings
+            margin-top: 5rem;
+            &:nth-child(2) {
+                margin-top: 0;
+            }
             width: 85%;
             margin-bottom: 0.75rem;
         }
@@ -368,6 +381,7 @@ $column-spacing: 15rem;
         grid-row: 1 / 4;
     
         text-align: right;
+        justify-self: end;
         text-transform: uppercase;
         font-size: 1.75rem;
 
@@ -412,9 +426,14 @@ $column-spacing: 15rem;
     //WDC
 
     .wdc-intro {
-        width: 350px;
+        width: 450px;
         margin-bottom: 15rem;
-        margin-top: 0.10rem;
+        // margin-top: 1.5rem;
+        padding-top: $top-bottom;
+        grid-row: 1 / 4;
+        grid-column: 1 / 2;
+        // font-size: 3rem;
+        // text-transform: lowercase;
     }
 
     .wdc {
@@ -426,6 +445,7 @@ $column-spacing: 15rem;
         
         img, video {
             width: 120%;
+            // width: 100%;
             &:not(:last-child) {
                 margin-bottom: 1.5rem;
             }
@@ -498,6 +518,9 @@ $column-spacing: 15rem;
         #sections {
             grid-column: 1 / 2;
             grid-row: 4 / 5;
+
+            justify-self: start;
+
 
             text-align: left;
             top: auto;
@@ -599,6 +622,10 @@ $column-spacing: 15rem;
 
         .mobile {
             width: 45%;
+        }
+
+        .wdc-intro {
+            width: 300px;
         }
 
         .writeup {

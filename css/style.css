@@ -426,6 +426,10 @@ html {
   margin-bottom: 2.5rem;
 }
 
+#project-page .writeup .overview h2 {
+  margin-top: 0;
+}
+
 #project-page .writeup .overview .overview-left {
   width: 50%;
   margin-right: 75px;
@@ -449,13 +453,22 @@ html {
   margin-bottom: 1.5rem;
 }
 
+#project-page .writeup .contributions h2 {
+  margin-top: 0;
+}
+
 #project-page .writeup h1 {
   margin-bottom: 1.5rem;
 }
 
 #project-page .writeup h2 {
+  margin-top: 5rem;
   width: 85%;
   margin-bottom: 0.75rem;
+}
+
+#project-page .writeup h2:nth-child(2) {
+  margin-top: 0;
 }
 
 #project-page .writeup p, #project-page .writeup ol, #project-page .writeup ul {
@@ -592,6 +605,8 @@ html {
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
   text-align: right;
+  -ms-grid-column-align: end;
+      justify-self: end;
   text-transform: uppercase;
   font-size: 1.75rem;
   white-space: nowrap;
@@ -649,9 +664,15 @@ html {
 }
 
 #project-page .wdc-intro {
-  width: 350px;
+  width: 450px;
   margin-bottom: 15rem;
-  margin-top: 0.10rem;
+  padding-top: 7.5rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
 }
 
 #project-page .wdc p {
@@ -725,6 +746,8 @@ html {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
+    -ms-grid-column-align: start;
+        justify-self: start;
     text-align: left;
     top: auto;
     position: static;
@@ -807,6 +830,9 @@ html {
   }
   #project-page .mobile {
     width: 45%;
+  }
+  #project-page .wdc-intro {
+    width: 300px;
   }
   #project-page .writeup .overview {
     -webkit-box-orient: vertical;
