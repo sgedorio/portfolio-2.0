@@ -155,9 +155,7 @@ $column-spacing: 15rem;
     .desktop {
         border: 1px solid black;
         width: 500px;
-        // height: 88%;
-        // height: 315.04px;
-        height: 93.25%; //why doesn't 88 work??
+        height: 315.04px;
         overflow: hidden;
 
         flex-shrink: 0;
@@ -564,7 +562,8 @@ $column-spacing: 15rem;
         }
 
         .desktop {
-            width: 71.9%;
+            width: 400px;
+            height: 253px;
             video {
                 width: 101%;
                 height: auto;

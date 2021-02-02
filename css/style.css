@@ -371,7 +371,7 @@ html {
 #project-page .desktop {
   border: 1px solid black;
   width: 500px;
-  height: 93.25%;
+  height: 315.04px;
   overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -784,7 +784,8 @@ html {
     margin-left: 3%;
   }
   #project-page .desktop {
-    width: 71.9%;
+    width: 400px;
+    height: 253px;
   }
   #project-page .desktop video {
     width: 101%;
