@@ -155,7 +155,9 @@ $column-spacing: 15rem;
     .desktop {
         border: 1px solid black;
         width: 500px;
-        height: 88%;
+        // height: 88%;
+        // height: 315.04px;
+        height: 93.25%; //why doesn't 88 work??
         overflow: hidden;
 
         flex-shrink: 0;
