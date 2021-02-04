@@ -54,6 +54,7 @@ html {
   font-size: 10px;
   font-weight: 400;
   cursor: crosshair;
+  scroll-behavior: smooth;
 }
 
 #index {
@@ -543,6 +544,29 @@ html {
   height: 315.04px;
 }
 
+@-webkit-keyframes wwr-hl-animation {
+  0% {
+    background-color: none;
+  }
+  100% {
+    background-color: #fda7a3;
+  }
+}
+
+@keyframes wwr-hl-animation {
+  0% {
+    background-color: none;
+  }
+  100% {
+    background-color: #fda7a3;
+  }
+}
+
+#project-page .writeup .wwr-hl-trigger {
+  -webkit-animation: wwr-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
+          animation: wwr-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
+}
+
 #project-page .writeup .wwr-values {
   margin: 5rem auto;
 }
@@ -591,6 +615,29 @@ html {
 #project-page .writeup .eclectic {
   background-color: #C0D8E0;
   padding: 1px;
+}
+
+@-webkit-keyframes sm-hl-animation {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #d2e6f3;
+  }
+}
+
+@keyframes sm-hl-animation {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #d2e6f3;
+  }
+}
+
+#project-page .writeup .sm-hl-trigger {
+  -webkit-animation: sm-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
+          animation: sm-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
 }
 
 #project-page .writeup #ideation-table {

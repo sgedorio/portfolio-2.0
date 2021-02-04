@@ -324,6 +324,16 @@ $column-spacing: 15rem;
         $inclusive: #FFFD82;
         $eclectic: #C0D8E0;
 
+        //highlight
+        @keyframes wwr-hl-animation {
+            0% {background-color: none;}
+            100% {background-color: #fda7a3}
+        }
+
+        .wwr-hl-trigger {
+            animation: wwr-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
+        }
+
         .wwr-values {
             margin: 5rem auto;
 
@@ -370,6 +380,29 @@ $column-spacing: 15rem;
         }
 
         //SM
+
+        //highlighter
+        @keyframes sm-hl-animation {
+            // from {background-color: none;}
+            // to {background-color: #dce1ff;}
+            0% {background-color: white;}
+            100% {background-color: #d2e6f3}
+            // 100% {background-color: #8ed2ff}
+            // 100% {background-color: #dce1ff}
+        }
+
+        .sm-hl-trigger {
+            animation: sm-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
+        }
+
+        // .sm-hl {
+        //    position: relative;
+        //    display: inline-block;
+        // }
+
+        // .sm-hl {
+        //     background-color: #dce1ff;
+        // }
 
         #ideation-table {
             display: none;

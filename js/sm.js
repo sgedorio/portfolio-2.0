@@ -1,6 +1,13 @@
 const ideationButton = document.getElementById('ideation-button');
 const ideationTable = document.getElementById('ideation-table');
 
+let smHL;
+let windowHeight;
+
+// let sections;
+// let sectionAnchors;
+
+//toggle ideation table
 ideationTable.style.display = 'none';
 ideationButton.addEventListener('click', toggle);
 
@@ -13,3 +20,75 @@ function toggle() {
         ideationButton.innerHTML = 'Click Here to View All 20 Solutions';
     }
 }
+
+
+
+function init() {
+    windowHeight = window.innerHeight;
+
+    //highlight SM sentences on view
+    smHL = document.getElementsByClassName('sm-hl');    
+}
+
+// function getSections() {
+    // const overview = document.getElementsByClassName('overview');
+    // console.log(overview);
+    // const otherSections = document.getElementsByClassName('section');
+    // console.log(otherSections);
+    // otherSections.remove([0])
+
+    // sections = document.querySelectorAll('.overview', '.section');
+    // sections = document.querySelectorAll('.section, .overview');
+    // sections = document.querySelectorAll('.overview, .sm-problem');
+    // sections = document.querySelectorAll('.overview');
+    // sectionAnchors = document.querySelectorAll('.anchor');
+    // console.log(sectionAnchors);
+    // console.log(sections);
+// }
+
+function checkPos() {
+
+    //iterate through highlighted elements
+    for (let i = 0; i < smHL.length; i++) {
+        let element = smHL[i];
+        let posFromTop = smHL[i].getBoundingClientRect().top;
+        let posFromBottom = smHL[i].getBoundingClientRect().bottom;
+        if (posFromTop >= 0 && posFromBottom <= windowHeight) {
+            element.classList.add('sm-hl-trigger');
+        } else element.classList.remove('sm-hl-trigger');
+    }
+
+    //iterate through sections
+    // for (let i = 0; i < sections.length; i++) {
+    //     let element = sections[i];
+    //     let posFromTop = sections[i].getBoundingClientRect().top;
+    //     let posFromBottom = smHL[i].getBoundingClientRect().bottom;
+    //     let midWindow = windowHeight * 0.75;
+    //     console.log(posFromTop, {windowHeight});
+    //     // console.log(posFromTop);
+    //     // console.log(windowHeight*0.75+20)
+    //     // console.log(windowHeight*0.75-20)
+    //     // if (posFromTop <= windowHeight*0.75 + 300 && posFromTop >= windowHeight * 0.75 - 300) {
+    //     // if (posFromTop >= 0 && posFromBottom <= windowHeight) {
+    //         if (posFromTop <= midWindow) {
+    //         // element.style.display = 'none';
+    //         // console.log({posFromTop});
+    //         console.log('hi')
+
+    //         // if (element.classList.contains('overview')) {
+    //         //     console.log('hi');
+    //         //     // for (let anchor of sectionAnchors) {
+    //         //     //     console.log(anchor);
+    //         //     // }
+    //         // } 
+    //     } else console.log('bye');
+    // }
+}
+
+
+window.addEventListener('scroll', checkPos);
+window.addEventListener('resize', init);
+
+init();
+// getSections();
+checkPos();
