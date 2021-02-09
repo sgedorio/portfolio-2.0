@@ -65,7 +65,7 @@
                             <!-- <p style="position: relative" class="sm-html">Supply Me is a school supply trading app that alleviates out-of-pocket expenses made by public school teachers for their students’ supplies.</p> -->
                             <!-- <p style="position: relative" class="sm-hl">By giving teachers the platform to buy or barter inexpensive supplies from other teachers, the app not only provides a useful resource for teachers to save money, but also fosters a strong sense of community that we learned was so integral to the lives of teachers.</p> -->
                             <p>By giving teachers the platform to buy or barter inexpensive supplies from other teachers, the app not only provides a useful resource for teachers to save money, but also fosters a strong sense of community that we learned was so integral to the lives of teachers.</p>
-                            <p>This was a conceptual project with most of the research and ideation completed as a group, and the final design of the app done individually. </p>
+                            <!-- <p>This was a conceptual project with most of the research and ideation completed as a group, and the final design of the app done individually. </p> -->
                             <div class="solution-button sm-button"><a href="#hi-fi-section">Jump to Solution</a></div>
                         </div>
                         <div class="overview-right">
@@ -104,8 +104,8 @@
                     <div class="section sm-problem">
                         <a id="problem-section"><h1>What is the Problem?</h1></a>
                         <div class="figure">
-                            <img style="padding-left: 15%; padding-right: 15%; margin-bottom: 5px;" src="img/sm/protest1.png">
-                            <img style="padding-left: 15%; padding-right: 15%;" src="img/sm/protest2.png">
+                            <img " src="img/sm/protest3.png">
+                            <!-- <img style="padding-left: 15%; padding-right: 15%;" src="img/sm/protest2.png"> -->
                             <p class="caption">Fig. 1. Educators protest across America in 2018 demanding better wages</p>
                         </div>
                         <p><a href="https://www.nbcphiladelphia.com/news/national-international/teachers-spend-own-money-on-school-needs-study/2062615/"><span class="sm-hl">Public school teachers spend $480 on average per year on supplies, nearly double the $250 federal tax deduction.</span></a></p>
@@ -118,7 +118,7 @@
                         <a id="research-section"><h1>User Research</h1></a>
                         <p>The growing problem of teachers paying out-of-pocket for supplies happens primarily in public school systems where most of the school finances depend on local taxpayers and state funding. <span class="sm-hl">We focused our research mainly on K-12 public school teachers, since private school budgets are more financially secure through tuition.</span></p>
                         
-                        <h2 style="margin-top: 0;">Domain Research: Analyzing Existing Solutions</h2>
+                        <h2 style="margin-top: 0;">Analyzing Existing Solutions</h2>
                         <div class="figure">
                             <img src="img/sm/logos.png">
                             <p class="caption">Fig. 2. Common platforms teachers use when trying to procure school supplies</p>
@@ -136,8 +136,8 @@
                         
                         <div class="figure">
                             <!-- <img style="padding-left: 18%; padding-right: 18%; margin-bottom: 5px;" src="img/sm/facebook.png"> -->
-                            <img style="padding-left: 18%; padding-right: 18%" src="img/sm/twitter.png">
-                            <p style="padding-left: 7.5%; padding-right: 7.5%" class="caption">Twitter hashtags to promote awareness and support for teachers (bottom)</p>
+                            <img src="img/sm/tweets.png">
+                            <p style="padding-left: 7.5%; padding-right: 7.5%" class="caption">Fig. 3. Twitter hashtags to promote awareness and support for teachers</p>
                         </div>
 
                         <p>We learned that: </p>
@@ -157,7 +157,7 @@
 
                         <p>Our most interesting findings came from the portion where teachers shared their current methods of acquiring supplies. The most common and representative responses are shown below: </p>
                         <div class="figure">
-                            <img src="img/sm/survey-responses.png">
+                            <img src="img/sm/survey-responses-2.png">
                             <p class="caption">Fig. 4. Example survey responses to "What are some of your strategies in getting needed school supplies?"</p>
                         </div>
                         <p>These results expose how the public school teachers from our survey are not only grossly underpaid, but also expected to be financially responsible for students’ supplies. Through this frustration, <span class="sm-hl">they learn to be resourceful and resort to several community-based strategies to alleviate out-of-pocket expenses.</span></p>
@@ -168,7 +168,7 @@
                             <li>Teachers mainly use DonorsChoose not for general classroom supplies, but more for the “technology end of things” (laptops, projectors, etc)</li>
                             <li>Some teachers resort to writing grants for supplies, but the process is often burdensome for its long and tedious commitment</li>
                         </ul>
-                        <p>These interviews revealed on a personal level how existing solutions had constraints of their own. In these systems, teachers usually play a waiting game when asking for supplies. Sites such as DonorsChoose rely on chance, connections, and the supply of donors. Similarly, grants are never 100% guaranteed, and the burdensome attempts to complete them may ultimately be futile.</p>
+                        <p>These interviews revealed how existing solutions had constraints of their own. In these systems, teachers usually play a waiting game when asking for supplies. Sites such as DonorsChoose rely on chance, connections, and the supply of donors. Similarly, grants are never 100% guaranteed, and the burdensome attempts to complete them may ultimately be futile.</p>
 
                         <h2>Affinity Diagram Findings & Storyboard</h2>
                         <div class="figure">
@@ -182,26 +182,30 @@
                             <li>If support was nowhere to be found in their immediate circles, <span class="sm-hl">teachers would often turn to digital platforms, such as Facebook groups or DonorsChoose, to search for additional help.</span></li>
                         </ul>
                         <p>A visual storyboard was quickly drawn to generalize the task patterns that public school teachers generally undergo: </p>
-                        <div class="figure">
-                            <img style="padding-left: 7.5%; padding-right: 7.5%;" src="img/sm/storyboard.png">
-                            <p class="caption">Fig. 6. Quick storyboard detailing common process teachers go through when procuring supplies</p>
+                        <div id="storyboard-button">Click Here to View Storyboard</div> 
+
+                        
+                        <div id="storyboard" class="figure">
+                                <img style="padding-left: 7.5%; padding-right: 7.5%;" src="img/sm/storyboard.png">
+                                <p class="caption">Fig. 6. Quick storyboard detailing common process teachers go through when procuring supplies</p>
                         </div>
-                        <p>After settling on these key themes, <span class="sm-hl">we decided to add parents as potential stakeholders</span> for possible solutions to this problem. Teachers would usually ask parents for supplies through a wish list at the beginning of the school year. Since we focused on the public school system, our findings showed that parent support is a complicated issue. Some parents have low income and do not have the resources to donate supplies. Others believe they should not be responsible for public school expenses. Despite this, most teachers generally found parents to be a reliable source of support.</p>
+                        <p>After settling on these key themes, <span class="sm-hl">we decided to add parents as potential stakeholders</span> for possible solutions to this problem. Teachers would usually ask parents for supplies through a wish list at the beginning of the school year. Collectively, most teachers generally found parents to be a reliable source of support.</p>
                         <p><span class="sm-hl">The willingness of the surrounding community to donate supplies, as well as the willingness for teachers to help each other, served as the central ideas we designed our solutions around.</span></p>
 
                         <h2>User Personas</h2>
                         <p>We created personas to simplify the main user needs of teachers and parents.</p>
                         <div class="figure">
-                            <!-- <img style="padding-left: 25%; padding-right: 25%; margin-bottom: 5px;" src="img/sm/teacher-persona.png">
-                            <img style="padding-left: 25%; padding-right: 25%;" src="img/sm/parent-persona.png"> -->
-                            <img src="img/sm/combined-personas.png">
+                            <img style="padding-left: 7.5%; padding-right: 7.5%; margin-bottom: 2.5rem;" src="img/sm/teacher-persona.png">
+                            <img style="padding-left: 7.5%; padding-right: 7.5%;" src="img/sm/parent-persona.png">
+                            <!-- <img src="img/sm/combined-personas-2.png"> -->
+                            <!-- <img src="img/sm/combined-personas.png"> -->
                             <p class="caption">Fig. 7. Personas for public school teachers and parents of students they teach</p>
                         </div>
                     </div>
 
                     <div class="section sm-lo-fi">
-                        <a id="lo-fi-section"><h1>Low Fidelity Prototypes</h1></a>
-                        <h2>Iterative Ideation</h2>
+                        <a id="lo-fi-section"><h1>Low Fidelity Ideation</h1></a>
+                        <!-- <h2>Iterative Ideation</h2> -->
                         <p>Through an exhaustive ideation process, we iterated several possible solutions until we converged on what we agreed to be the best solution. 20 possible solutions were considered, and each solution proposal had to be backed by our research.</p>
 
                         <div id="ideation-button">Click Here to View All 20 Solutions</div> 
@@ -340,20 +344,27 @@
 
                         
                         <p>We picked 3 of our most creative solutions and made rough low-fidelity prototypes for feedback: </p>
+                        
+                        
+                        
+
                         <h2>1. Locate to Educate</h2>
                         <p>Since <span class="sm-hl">central inventory systems and community donations were popular in our research</span>, expanding the scope of these inventory systems from the school to the community could prove to be a useful solution.</p>
-                        <div class="figure">
+                        
+                        <p>Donated school supplies will be tagged with RFID chips so that they become trackable. Nearby office supply and merchandise stores (Office Depot, Staples, etc.) will serve as “libraries” for certain schools or districts. Through an app, teachers can locate supplies they need and borrow them for a certain amount of time.</p>
+                        
+                        <div style="margin-top: 5rem" class="figure">
                             <img src="img/sm/locate-to-educate.png">
                             <p class="caption">Fig. 8. Locate To Educate prototype</p>
                         </div>
-                        <p>Donated school supplies will be tagged with RFID chips so that they become trackable. Nearby office supply and merchandise stores (Office Depot, Staples, etc.) will serve as “libraries” for certain schools or districts. Through an app, teachers can locate supplies they need and borrow them for a certain amount of time.</p>
+
 
                         <h2>2. Teacher Selling/Bartering App</h2>
                         <p><span class="sm-hl">Almost all of the teachers surveyed who lacked the necessary school supplies depended on help from parents or other teachers.</span> A trading/bartering app creates an easy and efficient way for teachers to sell, find, and ask for supplies.</p>
-                        <div class="figure">
+                        <!-- <div class="figure">
                             <img style="padding-left: 15%; padding-right: 15%;" src="img/sm/supply-me-lo-fi.png">
                             <p class="caption">Fig. 9. Teacher Selling/Bartering App prototype</p>
-                        </div>
+                        </div> -->
 
                         <p>In the app, teachers will have the option to search for supplies from their own school or surrounding neighborhood and district. Teachers can buy used supplies directly from other teachers or barter their own supplies in exchange for equally-valued items.</p>
                         <p>Teachers have the option to create wish lists as well. Parents will be granted access to the app where they will have the option to buy items off these lists.</p>
@@ -361,22 +372,28 @@
                         <h2>3. Supply Vending Machine</h2>
                         <p><span class="sm-hl">We found that teachers often searched for donated or leftover supplies from local libraries.</span> A vending machine in these buildings would store these free supplies and be readily available for teachers.</p>
                         <p>Users must be verified teachers to use these machines. It would most likely compromise of recycled materials such as old magazines, craft supplies, working utensils, etc.</p>
-                        <div class="figure">
+                        <!-- <div class="figure">
                             <img style="padding-left: 25%; padding-right: 25%;" src="img/sm/vending-machine.png">
                             <p class="caption">Fig. 10. Supply Vending Machine prototype</p>
+                        </div> -->
+                        
+                        <div style="margin-top: 5rem" class="figure">
+                            <img src="img/sm/app-vending.png">
+                            <p class="caption">Fig. 9. Teacher Selling/Bartering App prototype (left), Supply Vending Machine prototype (right)</p>
                         </div>
         
-                    <h2>Feedback</h2>
+                        <h2>Feedback</h2>
                         <p><span class="sm-hl">We presented our solutions to both our fellow Georgia Tech peers and local Atlanta teachers for a wide breadth of feedback.</span></p>
-                        <p>The Supply Vending Machine and Locate to Educate solutions were lauded for being resourceful and using existing community ecosystems (nearby libraries, supply stores), but faced significant critiques.</p>
-                        <p>Both groups found the Supply Vending Machine solution to be creative, but rightfully questioned whether or not a non-profit vending machine would be feasible, which already costs thousands of dollars just to implement. These thousands of dollars could be spent on more meaningful technologies for schools.</p>
-                        <p>For Locate to Educate, many criticized that keeping track of the conditions of supplies would be difficult, especially for smaller items. We proposed limiting the inventory to only bigger, reusable supplies such as textbooks, rulers, protractors, etc. Still, store workers would need to be properly trained to properly grade the conditions of supplies for next use.</p>
-                        <p><span class="sm-hl">In the end, we decided to pursue the Teacher Selling/Bartering App as our final solution.</span> An app is not as costly as vending machines, nor would it exclude small supplies from being bought or traded. It also garnered the most enthusiastic feedback, especially from the teachers we talked to.</p>
-                        <p><span class="sm-hl">By creating a digitally frugal trading environment, it tied a lot of our main research motifs together.</span></p>
+                        <p>The Supply Vending Machine and Locate to Educate solutions were lauded for being resourceful and using existing community ecosystems (nearby libraries, supply stores), but faced significant critiques in terms of cost and accessibility.</p>
+                        <!-- <p>Both groups found the Supply Vending Machine solution to be creative, but rightfully questioned whether or not a non-profit vending machine would be feasible, which already costs thousands of dollars just to implement. These thousands of dollars could be spent on more meaningful technologies for schools.</p> -->
+                        <!-- <p>For Locate to Educate, many criticized that keeping track of the conditions of supplies would be difficult, especially for smaller items. We proposed limiting the inventory to only bigger, reusable supplies such as textbooks, rulers, protractors, etc. Still, store workers would need to be properly trained to properly grade the conditions of supplies for next use.</p> -->
+                        <p><span class="sm-hl">In the end, we decided to pursue the Teacher Selling/Bartering App as our final solution.</span> A trading app would have a faster stream of supplies coming in and out of it compared to vending machines, and can sustain smaller used supplies which Locate to Education could not.It garnered the most enthusiastic feedback from the teachers we talked to.</p>
+                        <p>A digitally frugal trading environment that binds teachers with their local communities tied a lot of our research motifs together.</p>
+                    
                     </div>
 
-                    <div class="section sm-mid-fi">
-                        <a id="mid-fi-section"><h1>Medium Fidelity Prototype (Final Solution)</h1></a>
+                    <!-- <div class="section sm-mid-fi">
+                        <a id="mid-fi-section"><h1>Medium Fidelity Prototype</h1></a>
                         <p><span class="sm-hl">Supply Me is a school supply trading app that directly alleviates out-of-pocket expenses made by K-12 public school teachers for their students’ supplies.</span> By giving teachers the platform to buy or barter inexpensive supplies from other teachers, the app not only provides a useful resource for teachers to save money, but also fosters a strong sense of community that we learned was so integral to the lives of teachers.</p>
                         <p>Using Balsamiq, we created a medium-fidelity prototype that targeted both our teacher and parent stakeholders.</p>
                         
@@ -422,7 +439,8 @@
                             <img style="padding-left: 7.5%; padding-right: 7.5%" src="img/sm/buying-pages.png">
                             <p class="caption">Fig. 12. Supply Search pages</p>
                         </div>
-                        <br>
+                        <br> -->
+
                         <!-- <div class="figure">
                             <img style="padding-left: 7.5%; padding-right: 7.5%" src="img/sm/selling-pages.png">
                             <p class="caption">Fig. 13. Selling pages</p>
@@ -433,7 +451,7 @@
                             <p class="caption">Fig. 14. Wishlist, Order History, Class Announcement, & Forum pages</p>
                         </div> -->
 
-                        <h2>Parent Interface</h2>
+                        <!-- <h2>Parent Interface</h2>
                         <p>The 2 key functionalities included for the parent interface were: </p>
                         <p>1. View Teacher Wishlists<br>2. View Teacher Announcements</p>
 
@@ -441,9 +459,9 @@
                             <img  style="padding-left: 17%; padding-right: 17%" src="img/sm/parent-pages.png">
                             <p class="caption">Fig. 14. Parent pages</p>
                         </div>
-                    </div>
+                    </div> -->
                     
-                    <div class="section sm-reflection1">
+                    <!-- <div class="section sm-reflection1">
                         <a id="reflection-1-section"><h1>Personal Reflection 1</h1></a>
                         <p>I gained a lot of my first hands-on experience with user research from this project. I learned how to observe problem spaces with an ethnographic state of mind, conduct surveys and interviews on stakeholders, and innovate by exhausting and iterating through possible solutions.</p>
                         <p><span class="sm-hl">Looking back, the research could be better improved by gathering more data on parents of public school students</span> (most of our data on parents were based on what teachers had told us). Repeating our surveying, interviewing, and affinity diagramming processes on parents could reap a lot of useful information on how the Wishlist feature of the app be designed.</p>
@@ -451,48 +469,33 @@
                         <p>As a project, Supply Me highlights the types of problems I want to tackle throughout my career. Thinking of ethical solutions for overworked, ignored, often exploited communities is a principle I want to manifest in my professional life.</p>
                         <p><span class="sm-hl">That being said, it’s important to note that the Supply Me solution is a band-aid solution for the overall problem.</span> It merely alleviates teacher expenses—expenses that they shouldn’t be responsible for in the first place. <span class="sm-hl">Legislation is the only real solution here.</span> Unfortunately, the prospects are bleak. Even though <a href="https://www.cnn.com/2018/05/29/us/what-teachers-won-and-lost/index.html">the 2018 strikes brought in pay raises for teachers in some states</a>, recent data shows that <a href="https://www.usnews.com/news/education-news/articles/2019-04-29/teacher-salaries-fell-45-over-the-last-decade">the average teacher salary still fell almost 5% over the last decade</a>.</p>
                         <p>Until state legislators finally begin to prioritize the quality of the American public school system, Supply Me is one possible solution to consider to better organize how current teachers seek out for school supplies.</p>
-                    </div>
-                    
-                    <div class="section sm-2020update">
-                        <a id="2020-update-section"><h1>2020 Interface Update</h1></a>
-                        <p>While I was proud of the hard work that was put in this project, the constraints of time and actual design skills back then resulted in a solution that focused more on concept than design. Our Balsamiq prototype was a rudimentary mockup that only served to show the main features of the app without much focus on visual principles that could simplify and enhance the experience for stakeholders.</p>
-                        <p>Overall, Supply Me needed visual justice.</p>
-                        <p>In November 2020, I challenged myself and flushed out this project even further by creating a high-fidelity prototype to improve my skills in Figma, pixel-perfect interface design, and branding.</p>
-                    </div>
-                    
-                    <div class="section sm-wireframe-research">
-                        <a id="wireframe-research-section"><h1>Wireframe Research</h1></a>
-                        <h2>Researching Existing Trading Apps</h2>
-                        <p>With not much familiarity in the world of trading apps, I studied several trading and bartering apps (e.g. <a href="https://www.facebook.com/marketplace/">Marketplace</a>, <a href="https://www.mercari.com/">Mercari</a>, <a href="https://www.ebay.com/">Ebay</a>, <a href="https://www.etsy.com/">Etsy</a>) to get a better understanding of the interface expected for new apps hitting the market. <span class="sm-hl">I am an ardent believer that distinctness and originality in design can only be achieved by aggressively "copying” past and current design solutions.</span></p>
-                        <p><span class="sm-hl">I specifically looked at trading apps whose companies’ were UX-focused—that way, I could trust that the decisions of each design detail were most likely backed by research.</span></p>
-                        <div class="figure">
-                            <img src="img/sm/wireframe-research.png">
-                            <p class="caption">Fig. 15. Examples of wireframe research for existing apps</p>
-                        </div>
-                        <p>This process helped me with the minute details for the interface I had in mind, specifically in icon placements, tab bar nomenclatures, header features, and how items would be presented/bought/sold.</p>
-                        
-                        <h2>Wireframes</h2>
-                        <p>I resorted to drawing out my wireframes on paper in order to rapidly conceive of different designs and ideas for the final prototypes. Some wireframes were quickly drafted in Figma to check if certain ideas would translate well digitally, while others went straight from paper to final prototype and iterated from there.</p>
-                        <div class="figure">
-                            <img style="padding-left: 7.5%; padding-right: 7.5%;"src="img/sm/home-process.png">
-                            <p class="caption">Fig. 16. Example of wireframe-to-prototype pipeline</p>
-                        </div>
-                    </div>
-                    
+                    </div> -->
                     <div class="section sm-hi-fi">
                         <a id="hi-fi-section"><h1>High Fidelity Prototype</h1></a>
-                        <h2>Branding</h2>
-                        <p>As someone who had little experience in logo-making, this project was a fun opportunity for me to learn how to use Illustrator. Function followed form in this case; I created the logo first and its form inspired the round and playful shapes seen in the final prototypes.</p>
-                        <div class="figure">
-                            <img style="margin-top: 1.5rem; padding-left: 20%; padding-right: 20%;" src="img/sm/branding.svg">
-                            <p class="caption">Fig. 17. Supply Me branding template</p>
+                        <p><span class="sm-hl">Supply Me is a school supply trading app that directly alleviates out-of-pocket expenses made by K-12 public school teachers for their students’ supplies.</span> By giving teachers the platform to buy or barter inexpensive supplies from other teachers, the app not only provides a useful resource for teachers to save money, but also fosters a strong sense of community that we learned was so integral to the lives of teachers.</p>
+                        <p>As a group, we finished by creating a Balsamiq prototype that targeted both our teacher and parent stakeholders.</p>
+                        <div id="balsamiq-button"><a style="text-decoration: none" href="pdf/sm_balsamiq.pdf" target="_blank">Click Here to View Medium-Fidelity Prototype</a></div> 
+                        <p>Our Balsamiq prototype was a rudimentary mockup that only served to show the main features of the app without much focus on visual principles that could simplify and enhance the experience for stakeholders.</p>
+                        <p><span class="sm-hl">I challenged myself and flushed out this project even further by creating a high-fidelity prototype to improve my skills in Figma, pixel-perfect interface design, and branding.</span></p>
+                        <div style="margin: 7.5rem 0" class="figure">
+                            <img style="padding-left: 7.5%; padding-right: 7.5%;" src="img/sm/home-process.png">
+                            <p class="caption">Fig. 10. Example of wireframe-to-prototype pipeline</p>
                         </div>
-
-
-                        <h2>Home</h2>
                         
-                        <p>The Home page focuses primarily on the Supply Search functionality, giving teachers instant access to search for supplies. To save vertical space, recently viewed and saved items are displayed horizontally and the sticky header collapses while scrolling.</p>
-                        <p>The functionalities of creating announcements for parents and discussing through forums with other teachers were omitted in the final tab bar. Apps already exist to facilitate parent-teacher communication (e.g. <a href="https://en.classting.com/">Classting</a>, <a href="https://www.parentsquare.com/ ">ParentSquare</a>), and it might be difficult to replicate the forum-like social media communities that teachers are already a part of. Making the app as focused and singular as possible is key to ensuring that the product isn’t too complicated and thinly spread for new users, especially in these early stages.</p>
+
+
+
+                        <h2 style="margin-top: 7.5rem">Feature 1: Search for Supplies</h2>
+                        
+                        <p>The Home tab focuses primarily on the Supply Search functionality, giving teachers instant access to search for supplies. To save vertical space, recently viewed and saved items are displayed horizontally and the sticky header collapses while scrolling.</p>
+                        <!-- <p>The functionalities of creating announcements for parents and discussing through forums with other teachers were omitted in the final tab bar. Apps already exist to facilitate parent-teacher communication (e.g. <a href="https://en.classting.com/">Classting</a>, <a href="https://www.parentsquare.com/ ">ParentSquare</a>), and it might be difficult to replicate the forum-like social media communities that teachers are already a part of. Making the app as focused and singular as possible is key to ensuring that the product isn’t too complicated and thinly spread for new users, especially in these early stages.</p> -->
+                        <p>Teachers will have the option to filter search results by several item attributes, some being:</p>
+                        <ul>
+                            <li>Item Category (e.g. Arts & Craft, Sanitation & Hygiene, Desks & Chairs)</li>
+                            <li>Price Range</li>
+                            <li>Condition (e.g. New, Excellent, Fair, Poor)</li>
+                            <li>Who is selling the item (Teachers in School or expand to Teachers in Neighborhood)</li>
+                        </ul>
                         <br>
                         <div style="width: 90%; justify-content: center" class="figure-video">
                             <div class="mobile-large">
@@ -502,16 +505,16 @@
                                 </video>
                             </div>
                         </div>
-                        <p style="text-align: center; width: 90%;" class="caption">Fig. 18. Landing, home page, profile animation</p>
+                        <p style="text-align: center; width: 90%;" class="caption">Fig. 11. Landing, home page, profile animation</p>
 
-                        <div style="margin-bottom: 5rem" class="figure">
+                        <div style="margin: 5rem 0" class="figure">
                             <!-- <img style="padding-left: 15%; padding-right: 15%;" src="img/sm/home-screen.png">
                             <img style="margin-top: 5rem; padding-left: 15%; padding-right: 15%;" src="img/sm/component-search-bar.png"> -->
                             <img style="padding-left: 7.5%; padding-right: 7.5%;" src="img/sm/home-diagram.png">
-                            <p class="caption">Fig. 19. Home Page components</p>
+                            <p class="caption">Fig. 12. Home Page components</p>
                         </div>
 
-                        <h2>Wishlist</h2>
+                        <h2 style="margin-top: 7.5rem">Feature 2: Distribute Wishlists to Parents & Donors</h2>
                         <p>Since <span class="sm-hl">our research showed that public school teachers rely on the help of parents (and sometimes, online donors) to acquire supplies</span>, the Wishlist feature allows teachers to easily create and distribute school supply wishlists.</p>
                         <p>Items are organized by priority, with higher priority items displayed at the top of the wishlist.</p>
                         <br>
@@ -523,33 +526,33 @@
                                 </video>
                             </div>
                         </div>
-                        <p style="width: 90%; text-align: center;" class="caption">Fig. 20. Wishlist animation</p><br>
+                        <p style="width: 90%; text-align: center;" class="caption">Fig. 13. Wishlist animation</p><br>
 
                         <p>The most important design of this feature is the supply database that aggregates items from the most popular school supply websites, such as Amazon and Office Depot. <span class="sm-hl">Since most teachers who use online wishlists already do so through Amazon Wishlists, integrating this database that expands their breadth of supplies allows for a hassle-free experience that enhances rather than disrupts their existing task flows.</span></p>
                         <p>Apps such as <a href="https://www.elfster.com/">Elfster</a> have engineered similar item databases, which assured me that this solution is actually feasible for implementation.</p>
                         
                         <div class="figure">
                             <img style="padding-left: 7.5%; padding-right: 7.5%" src="img/sm/elfster-inspo.png">
-                            <p class="caption">Fig. 21. Inspiration for the Supply Me Wishlist database</p>
+                            <p class="caption">Fig. 14. Inspiration for the Supply Me Wishlist database</p>
                         </div>
 
-                        <h2>Add Item</h2>
+                        <h2 style="margin-top: 7.5rem">Feature 3: Add Item (To Sell or Make Barter Offers With)</h2>
                         <p>Originally, this tab was named “Sell Item” but I realized that not all items undergo the direct buy-and-sell process. As a bartering app, some items are traded rather than sold. “Add Item” encompasses the 2 types of items in Supply Me:  </p>
                        
                         <ol>
                             <li>Items that are being sold, which by default can be bartered for and be used to barter for other items</li>
-                            <li>Items that are exclusively used for barter offers</li>
+                            <li>Items that are exclusively used to barter for items (not sold, can only be viewed when making offers)</li>
                         </ol>
 
                         <p>A footnote was added to make a clear distinction between the 2.</p>
                         <p>If teachers choose to sell to teachers in their neighborhood, they also get to specify pick-up/delivery options. These can be further clarified through the Messaging feature.</p>
 
-                        <div class="figure">
+                        <div style="margin: 5rem 0" class="figure">
                             <img style="padding-left: 15%; padding-right: 15%" src="img/sm/add-item.png">
-                            <p class="caption">Fig. 22. Add Item screens</p>
+                            <p class="caption">Fig. 15. Add Item screens</p>
                         </div>
 
-                        <h2>Barter For Item</h2>
+                        <h2 style="margin-top: 7.5rem">Feature 4: Barter For Item</h2>
                         <p>When bartering for items, I made sure that users could have easy access to the seller information, specifically the seller’s wishlists. This way, barterers could have a better understanding of what items they could offer to trade with the item being sold.</p>
                         <div style="justify-content: center; margin-top: 2.5rem; width: 90%;" class="figure-video">
                             <img style="width: 175px;" src="img/sm/task-flow-1.png">
@@ -562,7 +565,7 @@
                             </div>
                         </div>
                         
-                        <div style="justify-content: center; width: 90%;" class="figure-video">
+                        <div style="justify-content: center; margin-top: 2.5rem; width: 90%;" class="figure-video">
                             <div class="mobile-large">
                                 <video autoplay loop muted playsinline> 
                                     <source src="img/sm/barter-2.mp4" type="video/mp4">
@@ -573,13 +576,12 @@
                             <img style="width: 175px;" src="img/sm/task-flow-2.png">
 
                         </div>
-                        <p style="width: 90%; text-align: center;" class="caption">Fig. 23. Barter Task Flow with corresponding screen animations</p><br>
+                        <p style="width: 90%; text-align: center;" class="caption">Fig. 16. Barter Task Flow with corresponding screen animations</p><br>
 
 
-                        <h2>Parent Interface</h2>
-                        <p>Like the teacher interface, the parent interface cut down on certain functionalities to be as simple as possible. The final prototype focuses mainly on simplifying the wishlist feature to be as streamlined as possible for parents.</p>
+                        <h2 style="margin-top: 7.5rem">Parent Interface</h2>
                         <p><span class="sm-hl">Our research showed that many teachers relied on the gratuitous help of parents in procuring supplies, specifically in the form of school supply wishlists given to students at the beginning of the school year.</span></p>
-                        <p>Parents now have the option to quickly add teacher wishlists by scanning a QR code or entering a numerical code (which teachers can easily include in their paper/PDF wishlists). This was inspired by the QR code feature from the Locate to Educate solution from the early ideation process.</p>
+                        <p>Parents have the option to quickly add teacher wishlists by scanning a QR code or entering a numerical code (which teachers can easily include in their paper/PDF wishlists). This was inspired by the QR code feature from the Locate to Educate solution from the early ideation process.</p>
                         <div style="width: 90%; justify-content: center" class="figure-video">
                             <img style="width: 300px;" src="img/sm/parent-wishlist.png">
                             <div class="mobile-large">
@@ -589,25 +591,63 @@
                                 </video>
                             </div>
                         </div>
-                        <p style="width: 90%; text-align: center;" class="caption">Fig. 24. Example School Supply Wishlist with Parent Interface animation</p><br>
+                        <p style="width: 90%; text-align: center;" class="caption">Fig. 17. Example School Supply Wishlist with Parent Interface animation</p><br>
+                    </div>
 
+                    <!-- <div class="section sm-2020update">
+                        <a id="2020-update-section"><h1>2020 Interface Update</h1></a>
+                        <p>While I was proud of the hard work that was put in this project, the constraints of time and actual design skills back then resulted in a solution that focused more on concept than design. Our Balsamiq prototype was a rudimentary mockup that only served to show the main features of the app without much focus on visual principles that could simplify and enhance the experience for stakeholders.</p>
+                        <p>Overall, Supply Me needed visual justice.</p>
+                        <p>In November 2020, I challenged myself and flushed out this project even further by creating a high-fidelity prototype to improve my skills in Figma, pixel-perfect interface design, and branding.</p>
+                    </div> -->
+                    
+                    <!-- <div class="section sm-wireframe-research">
+                        <a id="wireframe-research-section"><h1>Wireframe Research</h1></a>
+                        <h2>Researching Existing Trading Apps</h2>
+                        <p>With not much familiarity in the world of trading apps, I studied several trading and bartering apps (e.g. <a href="https://www.facebook.com/marketplace/">Marketplace</a>, <a href="https://www.mercari.com/">Mercari</a>, <a href="https://www.ebay.com/">Ebay</a>, <a href="https://www.etsy.com/">Etsy</a>) to get a better understanding of the interface expected for new apps hitting the market. <span class="sm-hl">I am an ardent believer that distinctness and originality in design can only be achieved by aggressively "copying” past and current design solutions.</span></p>
+                        <p><span class="sm-hl">I specifically looked at trading apps whose companies’ were UX-focused—that way, I could trust that the decisions of each design detail were most likely backed by research.</span></p>
                         
-
+                        <p>This process helped me with the minute details for the interface I had in mind, specifically in icon placements, tab bar nomenclatures, header features, and how items would be presented/bought/sold.</p>
+                        
+                        <h2>Wireframes</h2>
+                        <p>I resorted to drawing out my wireframes on paper in order to rapidly conceive of different designs and ideas for the final prototypes. Some wireframes were quickly drafted in Figma to check if certain ideas would translate well digitally, while others went straight from paper to final prototype and iterated from there.</p>
+                        
+                    </div> -->
+                    
+                    <div class="section sm-branding">
+                    <a id="branding"><h1>Branding</h1></a>
+                        <p>As someone who had little experience in logo-making, this project was a fun opportunity for me to play with Illustrator. Function followed form in this case; I created the logo first and its form inspired the round and playful shapes seen in the final prototypes.</p>
+                        <div style="margin: 5rem 0" class="figure">
+                            <img style="margin-top: 1.5rem; padding-left: 20%; padding-right: 20%;" src="img/sm/branding.svg">
+                            <p class="caption">Fig. 18. Supply Me branding template</p>
+                        </div>
                     </div>
 
                     <div class="section last-child sm-reflection2">
-                        <a id="reflection-2-section"><h1>Personal Reflection 2</h1></a>
-                        <p>The 2 main takeaways I learned from doing the interface update were: </p>
+                        <a id="reflection-2-section"><h1>Personal Reflection</h1></a>
+                        <p>The 3 main takeaways I learned from doing this project were: </p>
                         <!-- <br> -->
                         <!-- <h2>1. Studying the design of existing solutions is crucial in understanding both the technical and visual landscapes a product will be delivered in.</h2> -->
-                        <h2>1. When in doubt, study existing designs.</h2>
+                        <h2>1. These are bandaid solutions. </h2> 
                         <br>
-                        <p>Compiling all of the reputable marketing and trading apps (and better yet, researching which ones had committed UX teams) was particularly helpful in having a technical and visual baseline for how Supply Me should operate and feel. Whenever I was struggling with a certain user flow or figuring out what buttons or icons I needed to include, I would always look to these sources for inspiration.</p>
-                        <p>I was hesitant at first to look at existing apps under the fear of being derivative. <span class="sm-hl">I learned that doing research on existing solutions actually helps your work to be more unique, precisely because you're more wary of what’s already been done.</span> This research also succeeds in doing the opposite by ensuring that the interface doesn’t contrast too harshly with other apps in the market. Preserving familiarity through well-known patterns (e.g. being consistent with how items are bought and sold in other apps) is key to maintaining good user experience.</p>
-                        <p><span class="sm-hl">Learning how to balance distinctiveness and familiarity can be done only by studying past and current design solutions.</span></p>
+                        <p>As a project, Supply Me highlights the types of problems I want to tackle throughout my career. Thinking of ethical solutions for overworked, ignored, often exploited communities is a principle I want to manifest in my professional life.</p>
+                        <p><span class="sm-hl">That being said, it’s important to note that the Supply Me solution is a band-aid solution for the overall problem.</span> It merely alleviates teacher expenses—expenses that they shouldn’t be responsible for in the first place. <span class="sm-hl">Legislation is the only real solution here.</span> Unfortunately, the prospects are bleak. Even though <a href="https://www.cnn.com/2018/05/29/us/what-teachers-won-and-lost/index.html">the 2018 strikes brought in pay raises for teachers in some states</a>, recent data shows that <a href="https://www.usnews.com/news/education-news/articles/2019-04-29/teacher-salaries-fell-45-over-the-last-decade">the average teacher salary still fell almost 5% over the last decade</a>.</p>
+                        <p>Until state legislators finally begin to prioritize the quality of the American public school system, Supply Me is one possible solution to consider to better organize how current teachers seek out for school supplies.</p>
+                        
+                        <h2>2. When in doubt, study existing designs.</h2>
+                        <br>
+                        <!-- <p>Compiling all of the reputable marketing and trading apps (and better yet, researching which ones had committed UX teams) was particularly helpful in having a technical and visual baseline for how Supply Me should operate and feel. Whenever I was struggling with a certain user flow or figuring out what buttons or icons I needed to include, I would always look to these sources for inspiration.</p> -->
+                        <p>With not much familiarity in the world of trading apps, I studied several trading and bartering apps (e.g. <a href="https://www.facebook.com/marketplace/">Marketplace</a>, <a href="https://www.mercari.com/">Mercari</a>, <a href="https://www.ebay.com/">Ebay</a>, <a href="https://www.etsy.com/">Etsy</a>) to get a better understanding of the interface expected for new apps hitting the market. <span class="sm-hl">I am an ardent believer that distinctness and originality in design can only be achieved by aggressively "copying” past and current design solutions.</span></p>
+                        <p>I specifically looked at trading apps whose companies’ were UX-focused—that way, I could trust that the decisions of each design detail were most likely backed by research.</p>
+                        <!-- <p>I was hesitant at first to look at existing trading apps under the fear of being derivative.</p> -->
+                        <div style="padding-left: 15%; padding-right: 15%" class="figure">
+                            <img src="img/sm/wireframe-research-2.png">
+                            <p class="caption">Fig. 19. Examples of wireframe research for existing apps</p>
+                        </div>
+                        <p><span class="sm-hl">I learned that doing research on existing solutions actually helps your work to be more unique, precisely because you're more wary of what’s already been done.</span> This research also succeeds in doing the opposite by ensuring that the interface doesn’t contrast too harshly with other apps in the market. Preserving familiarity through well-known patterns (e.g. being consistent with how items are bought and sold in other apps) is key to maintaining good user experience.</p>
 
                         <!-- <br> -->
-                        <h2>2. Always take the exhaustive ideation process seriously!</h2>
+                        <h2>3. Always take the exhaustive ideation process seriously!</h2>
                         <br>
                         <p>It’s fulfilling when the ideas you once deemed infeasible turn out to be helpful in the design process later on. <span class="sm-hl">I came to realize how relevant the ideation process is even in the final prototyping stages.</span></p>
                         <p class="last-child">For example, the Locate to Educate solution was backed by our research that central inventory systems were used often by schools to better organize their limited supplies. Even though this was a scrapped solution, it became clear to me that with the way Supply Me is designed, it could also be used as a central inventory app. Instead of trading, teachers can use the app to view and check out available shared supplies (this inventory system may be organized perhaps by a librarian or other administrator). This flexibility can be explored in the next prototype iteration.</p>
@@ -627,13 +667,14 @@
                 <a href="#overview-section"><div class="first-child anchor sm-overview">Overview</div></a>
                 <a href="#problem-section"><div class="anchor sm-problem">Problem</div></a>
                 <a href="#research-section"><div class="anchor sm-research">User Research</div></a>
-                <a href="#lo-fi-section"><div class="anchor sm-lo-fi">Lo-Fi Prototypes</div></a>
-                <a href="#mid-fi-section"><div class="anchor sm-mid-fi">Mid-Fi Prototype</div></a>
-                <a href="#reflection-1-section"><div class="anchor sm-reflection1">Reflection 1</div></a>
-                <a href="#2020-update-section"><div class="anchor sm-2020-update">2020 Update</div></a>
-                <a href="#wireframe-research-section"><div class="anchor sm-wireframe-research">Wireframe Research</div></a>
+                <a href="#lo-fi-section"><div class="anchor sm-lo-fi">Lo-Fi Ideation</div></a>
+                <!-- <a href="#mid-fi-section"><div class="anchor sm-mid-fi">Mid-Fi Prototype</div></a> -->
+                <!-- <a href="#reflection-1-section"><div class="anchor sm-reflection1">Reflection 1</div></a> -->
+                <!-- <a href="#2020-update-section"><div class="anchor sm-2020-update">2020 Update</div></a> -->
+                <!-- <a href="#wireframe-research-section"><div class="anchor sm-wireframe-research">Wireframe Research</div></a> -->
                 <a href="#hi-fi-section"><div class="anchor sm-hi-fi">Hi-Fi Prototype</div></a>
-                <a href="#reflection-2-section"><div class="anchor sm-reflection2">Reflection 2</div></a>
+                <a href="#branding"><div class="anchor sm-branding">Branding</div></a>
+                <a href="#reflection-2-section"><div class="anchor sm-reflection2">Reflection</div></a>
             </div>
 
             <div id="links">

@@ -959,9 +959,9 @@ html {
   color: #F16662;
 }
 
-#ideation-button {
+#ideation-button, #storyboard-button, #balsamiq-button {
   cursor: pointer;
-  margin: 2rem 0;
+  margin: 3rem 0;
   padding: 1rem;
   border: 2px solid #3240DD;
   background-color: #F2F4FF;
