@@ -119,7 +119,7 @@ $column-spacing: 15rem;
     #grid-container {
         margin: 0 $top-bottom;
         display: grid;
-        grid-template-columns: minmax(min-content, 60vw) minmax(min-content, 40vw);
+        grid-template-columns: minmax(min-content, 800px) min-content;
         grid-template-rows: auto;
     }
     

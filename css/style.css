@@ -318,9 +318,9 @@ html {
   margin: 0 7.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(min-content, 60vw) minmax(min-content, 40vw);
-      grid-template-columns: minmax(-webkit-min-content, 60vw) minmax(-webkit-min-content, 40vw);
-      grid-template-columns: minmax(min-content, 60vw) minmax(min-content, 40vw);
+  -ms-grid-columns: minmax(min-content, 800px) min-content;
+      grid-template-columns: minmax(-webkit-min-content, 800px) -webkit-min-content;
+      grid-template-columns: minmax(min-content, 800px) min-content;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
