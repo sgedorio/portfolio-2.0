@@ -102,8 +102,9 @@ html {
 }
 
 #grid-container .title {
-  text-transform: uppercase;
-  font-family: giddyup-std, sans-serif;
+  font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 #grid-container .author {
