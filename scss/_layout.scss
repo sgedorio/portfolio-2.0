@@ -119,7 +119,7 @@ $column-spacing: 15rem;
     #grid-container {
         margin: 0 $top-bottom;
         display: grid;
-        grid-template-columns: minmax(min-content, 800px) min-content;
+        grid-template-columns: minmax(min-content, 800px) minmax(min-content, 200px);
         grid-template-rows: auto;
     }
     
@@ -467,6 +467,8 @@ $column-spacing: 15rem;
         // font-size: 3rem;
         // text-transform: lowercase;
     }
+
+
 
     .wdc {
 
