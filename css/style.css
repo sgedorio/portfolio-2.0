@@ -159,6 +159,11 @@ html {
   font-style: italic;
 }
 
+#grid-container #sections {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+
 #grid-container #sections a {
   text-decoration: none;
   color: inherit;
@@ -646,8 +651,6 @@ html {
   grid-row: 1 / 4;
   -ms-grid-column-align: end;
       justify-self: end;
-  text-transform: uppercase;
-  font-size: 1.75rem;
   white-space: nowrap;
   top: 3.75rem;
   position: -webkit-sticky;
@@ -663,9 +666,9 @@ html {
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  top: calc(100vh - 7.5rem - 60px);
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  top: calc(100vh - 7.5rem - 90px - 1rem);
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -915,6 +918,20 @@ html {
   #project-page .writeup p, #project-page .writeup ol, #project-page .writeup ul, #project-page .writeup h2 {
     width: 100%;
   }
+}
+
+.navigation {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.30;
+  line-height: 1;
+  text-align: right;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
 }
 
 .icons img {
