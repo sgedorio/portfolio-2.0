@@ -466,6 +466,11 @@ $column-spacing: 15rem;
         grid-column: 1 / 2;
         // font-size: 3rem;
         // text-transform: lowercase;
+        p {
+            &:not(:first-child) {
+                margin-top: 2rem;
+            }
+        }
     }
 
 
@@ -473,7 +478,8 @@ $column-spacing: 15rem;
     .wdc {
 
         p {
-            width: 350px;
+            width: 300px;
+            text-transform: uppercase;
             margin-bottom: 2.5rem;
         }
         

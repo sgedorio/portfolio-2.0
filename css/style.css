@@ -171,8 +171,11 @@ html {
 }
 
 #grid-container .wdc-intro p {
-  margin-top: 2rem;
   line-height: 1.25;
+}
+
+#grid-container .wdc-caption {
+  font-size: 1.25rem;
 }
 
 #index {
@@ -723,8 +726,13 @@ html {
   grid-column: 1 / 2;
 }
 
+#project-page .wdc-intro p:not(:first-child) {
+  margin-top: 2rem;
+}
+
 #project-page .wdc p {
-  width: 350px;
+  width: 300px;
+  text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
 
