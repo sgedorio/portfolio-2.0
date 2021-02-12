@@ -46,7 +46,7 @@ function init() {
     windowHeight = window.innerHeight;
 
     //highlight SM sentences on view
-    smHL = document.getElementsByClassName('sm-hl');    
+    smHL = document.getElementsByClassName('hl');    
 }
 
 // function getSections() {
@@ -73,8 +73,11 @@ function checkPos() {
         let posFromTop = smHL[i].getBoundingClientRect().top;
         let posFromBottom = smHL[i].getBoundingClientRect().bottom;
         if (posFromTop >= 0 && posFromBottom <= windowHeight) {
-            element.classList.add('sm-hl-trigger');
-        } else element.classList.remove('sm-hl-trigger');
+            // element.classList.add('sm-hl-trigger');
+            // console.log(element.style.background);
+            element.style.backgroundPosition = 'left bottom';
+        // } else element.classList.remove('sm-hl-trigger');
+        } else element.style.backgroundPosition = 'right bottom'
     }
 
     //iterate through sections

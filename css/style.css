@@ -590,11 +590,11 @@ html {
 }
 
 #project-page .writeup .wwr-values ul :nth-child(1) {
-  background-color: #F15152;
+  background-color: #FFBD80;
 }
 
 #project-page .writeup .wwr-values ul :nth-child(2) {
-  background-color: #FFFD82;
+  background-color: #A1FF80;
 }
 
 #project-page .writeup .wwr-values ul :nth-child(3) {
@@ -608,12 +608,12 @@ html {
 }
 
 #project-page .writeup .quality {
-  background-color: #F15152;
+  background-color: #FFBD80;
   padding: 1px;
 }
 
 #project-page .writeup .inclusive {
-  background-color: #FFFD82;
+  background-color: #A1FF80;
   padding: 1px;
 }
 
@@ -622,27 +622,15 @@ html {
   padding: 1px;
 }
 
-@-webkit-keyframes sm-hl-animation {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: #d2e6f3;
-  }
-}
+@-webkit-keyframes sm-hl-animation {}
 
-@keyframes sm-hl-animation {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: #d2e6f3;
-  }
-}
-
-#project-page .writeup .sm-hl-trigger {
-  -webkit-animation: sm-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
-          animation: sm-hl-animation 0.75s ease-in-out 0s 1 normal forwards;
+@keyframes sm-hl-animation {}#project-page .writeup .hl {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFA80), color-stop(50%, white));
+  background: linear-gradient(to right, #FFFA80 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 #project-page .writeup #ideation-table {

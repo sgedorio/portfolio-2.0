@@ -3,7 +3,7 @@ let windowHeight;
 
 function init() {
     windowHeight = window.innerHeight;
-    wwrHL = document.getElementsByClassName('wwr-hl');    
+    wwrHL = document.getElementsByClassName('hl');    
 }
 
 function checkPos() {
@@ -14,8 +14,11 @@ function checkPos() {
         let posFromTop = wwrHL[i].getBoundingClientRect().top;
         let posFromBottom = wwrHL[i].getBoundingClientRect().bottom;
         if (posFromTop >= 0 && posFromBottom <= windowHeight) {
-            element.classList.add('wwr-hl-trigger');
-        } else element.classList.remove('wwr-hl-trigger');
+            // element.classList.add('wwr-hl-trigger');
+            element.style.backgroundPosition = 'left bottom';
+        // } else element.classList.remove('wwr-hl-trigger');
+        } else element.style.backgroundPosition = 'right bottom'
+
     }
 }
 
