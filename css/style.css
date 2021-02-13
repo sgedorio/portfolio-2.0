@@ -171,7 +171,7 @@ html {
 
 #grid-container .wdc-intro {
   font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -184,7 +184,8 @@ html {
 }
 
 #index {
-  margin: 7.5rem 8rem 7.5rem 7.5rem;
+  width: 1000px;
+  margin: 7.5rem auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,6 +267,12 @@ html {
   white-space: nowrap;
 }
 
+@media (max-width: 1280px) {
+  #index {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1024px) {
   #index #middle {
     white-space: normal;
@@ -325,7 +332,10 @@ html {
 }
 
 #project-page #grid-container {
-  margin: 0 7.5rem;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(min-content, 800px) minmax(min-content, 200px);
@@ -649,8 +659,7 @@ html {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  padding-left: 5rem;
   white-space: nowrap;
   top: 3.75rem;
   position: -webkit-sticky;
@@ -707,6 +716,7 @@ html {
 
 #project-page .wdc-intro {
   width: 450px;
+  width: 80%;
   margin-bottom: 15rem;
   padding-top: 7.5rem;
   -ms-grid-row: 1;
@@ -728,7 +738,7 @@ html {
 }
 
 #project-page .wdc img, #project-page .wdc video {
-  width: 120%;
+  width: 100%;
 }
 
 #project-page .wdc img:not(:last-child), #project-page .wdc video:not(:last-child) {
@@ -738,7 +748,7 @@ html {
 #project-page .wdc .two-col-grid {
   display: -ms-grid;
   display: grid;
-  width: 120%;
+  width: 100%;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   -ms-grid-rows: auto;
@@ -762,11 +772,19 @@ html {
   margin-bottom: 15rem;
 }
 
+@media (max-width: 1280px) {
+  #project-page #grid-container {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1024px) {
   #project-page #grid-container {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     grid-auto-rows: auto;
+    margin: 0 7.5rem;
+    width: 95%;
   }
   #project-page .wdc-intro {
     margin-bottom: 2.25rem;
@@ -795,6 +813,7 @@ html {
     grid-row: 4 / 5;
     -ms-grid-column-align: start;
         justify-self: start;
+    padding-left: 0;
     text-align: left;
     top: auto;
     position: static;
@@ -987,5 +1006,11 @@ html {
   width: fit-content;
   -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.16);
   box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
