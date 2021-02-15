@@ -436,7 +436,6 @@ html {
 }
 
 #project-page .writeup .overview {
-  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,12 +450,12 @@ html {
   margin-top: 0;
 }
 
-#project-page .writeup .overview .overview-left {
+#project-page .writeup .overview .overview-right {
   width: 50%;
   margin-right: 75px;
 }
 
-#project-page .writeup .overview .overview-right {
+#project-page .writeup .overview .overview-left {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,7 +469,7 @@ html {
           justify-content: space-between;
 }
 
-#project-page .writeup .overview .overview-right .timeline, #project-page .writeup .overview .overview-right .tools {
+#project-page .writeup .overview .overview-left .timeline, #project-page .writeup .overview .overview-left .tools {
   margin-bottom: 1.5rem;
 }
 
@@ -521,7 +520,7 @@ html {
 }
 
 #project-page .writeup .section {
-  margin-bottom: 5rem;
+  margin-bottom: 12.5rem;
 }
 
 #project-page .writeup .last-child {
@@ -605,7 +604,7 @@ html {
 }
 
 #project-page .writeup .wwr-values ul :nth-child(1) {
-  background-color: #FFBD80;
+  background-color: #FAACE9;
 }
 
 #project-page .writeup .wwr-values ul :nth-child(2) {
@@ -623,7 +622,7 @@ html {
 }
 
 #project-page .writeup .quality {
-  background-color: #FFBD80;
+  background-color: #FAACE9;
   padding: 1px;
 }
 
@@ -640,12 +639,12 @@ html {
 @-webkit-keyframes sm-hl-animation {}
 
 @keyframes sm-hl-animation {}#project-page .writeup .hl {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFFA80), color-stop(50%, white));
-  background: linear-gradient(to right, #FFFA80 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFF1A6), color-stop(50%, white));
+  background: linear-gradient(to right, #FFF1A6 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
 }
 
 #project-page .writeup #ideation-table {
@@ -732,7 +731,6 @@ html {
 }
 
 #project-page .wdc p {
-  width: 300px;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
@@ -943,7 +941,6 @@ html {
   font-size: 1.75rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  opacity: 0.30;
   line-height: 1;
   text-align: right;
 }
@@ -951,6 +948,14 @@ html {
 .navigation a {
   text-decoration: none;
   color: black;
+}
+
+.navigation div {
+  opacity: 0.3;
+}
+
+.navigation div:hover {
+  opacity: 1;
 }
 
 .icons img {
@@ -963,7 +968,7 @@ html {
 
 .solution-button {
   cursor: pointer;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 4rem 0;
   padding: 1rem 2.5rem;
   border-radius: 20px;
   width: -webkit-fit-content;
@@ -974,6 +979,8 @@ html {
   text-transform: uppercase;
   font-size: 2rem;
   white-space: nowrap;
+  width: 90%;
+  text-align: center;
 }
 
 .solution-button a {

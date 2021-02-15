@@ -1,5 +1,5 @@
-const ideationButton = document.getElementById('ideation-button');
-const ideationTable = document.getElementById('ideation-table');
+// const ideationButton = document.getElementById('ideation-button');
+// const ideationTable = document.getElementById('ideation-table');
 
 const storyButton = document.getElementById('storyboard-button');
 const storyboard = document.getElementById('storyboard');
@@ -14,8 +14,8 @@ let windowHeight;
 storyboard.style.display = 'none';
 storyButton.addEventListener('click', toggle);
 //toggle ideation table
-ideationTable.style.display = 'none';
-ideationButton.addEventListener('click', toggle);
+// ideationTable.style.display = 'none';
+// ideationButton.addEventListener('click', toggle);
 
 function toggle(e) {
     if (e.target.id === 'storyboard-button') {
@@ -28,15 +28,15 @@ function toggle(e) {
         }
     }
 
-    else if (e.target.id === 'ideation-button') {
-        if (ideationTable.style.display === 'none') {
-            ideationTable.style.display = 'block';
-            ideationButton.innerHTML = 'Hide Table';
-        } else if (ideationTable.style.display === 'block') {
-            ideationTable.style.display = 'none';
-            ideationButton.innerHTML = 'Click Here to View All 20 Solutions';
-        }
-    }
+    // else if (e.target.id === 'ideation-button') {
+    //     if (ideationTable.style.display === 'none') {
+    //         ideationTable.style.display = 'block';
+    //         ideationButton.innerHTML = 'Hide Table';
+    //     } else if (ideationTable.style.display === 'block') {
+    //         ideationTable.style.display = 'none';
+    //         ideationButton.innerHTML = 'Click Here to View All 20 Solutions';
+    //     }
+    // }
 
 }
 

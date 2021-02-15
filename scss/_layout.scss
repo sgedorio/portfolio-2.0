@@ -214,7 +214,7 @@ $column-spacing: 15rem;
 
     //overview layout
     .overview {
-        width: 85%;
+        // width: 85%;
 
         display: flex;
         flex-flow: row nowrap;
@@ -224,12 +224,12 @@ $column-spacing: 15rem;
             margin-top: 0;
         }
 
-        .overview-left {
+        .overview-right {
             width: 50%;
             margin-right: 75px;
         }
 
-        .overview-right {
+        .overview-left {
             width: 50%;
             display: flex;
             flex-flow: column nowrap;
@@ -289,7 +289,7 @@ $column-spacing: 15rem;
         }
 
         .section {
-            margin-bottom: 5rem;
+            margin-bottom: 12.5rem;
         }
 
         //get rid of 5rem margin-bottom for last child
@@ -338,7 +338,7 @@ $column-spacing: 15rem;
         }
 
         //WWR
-        $quality: #FFBD80;
+        $quality: #FAACE9;
         $inclusive: #A1FF80;
         $eclectic: #C0D8E0;
 
@@ -428,10 +428,10 @@ $column-spacing: 15rem;
         // }
 
         .hl {
-            background: linear-gradient(to right, #FFFA80 50%, white 50%);
+            background: linear-gradient(to right, #FFF1A6 50%, white 50%);
             background-size: 200% 100%;
             background-position: right bottom;
-            transition: all 1s ease-out;
+            transition: all 0.75s ease-out;
         }
 
         // .sm-hl {
@@ -519,7 +519,7 @@ $column-spacing: 15rem;
     .wdc {
 
         p {
-            width: 300px;
+            // width: 300px;
             text-transform: uppercase;
             margin-bottom: 2.5rem;
         }
