@@ -73,12 +73,6 @@ html {
 }
 
 @media (hover: hover) and (min-width: 540px) {
-  #index a:hover {
-    font-family: giddyup-std, sans-serif;
-    font-size: 3.15rem;
-    line-height: 0;
-    cursor: crosshair;
-  }
   #index a:hover img {
     margin-top: 2.5px;
     padding: 0;
@@ -195,6 +189,49 @@ html {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   line-height: 1.125;
+}
+
+#index .number {
+  border: 2px dotted #34bb3f;
+  border-radius: 25px;
+  padding: 0 0.75rem;
+  background-color: #ebe4e5e0;
+  color: #34bb3f;
+  opacity: 0.85;
+}
+
+#index .hl, #index #resume {
+  border: 2px dotted #34bb3f;
+  color: #34bb3f;
+  background: #ebe4e5e0;
+  opacity: 0.85;
+  border-radius: 25px;
+  padding: 0 1rem;
+  display: inline-block;
+}
+
+#index .hover-reveal {
+  position: fixed;
+  width: 350px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#index .hover-reveal__inner,
+#index .hover-reveal__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#index .hover-reveal__img {
+  background-size: cover;
+  background-position: 50% 50%;
+  border: 3px dotted #34bb3f;
+  border-radius: 25px;
 }
 
 #index #top {
