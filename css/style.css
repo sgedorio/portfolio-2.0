@@ -77,6 +77,10 @@ html a:hover {
 }
 
 @media (hover: hover) and (min-width: 540px) {
+  #index a:hover {
+    background-color: #111010;
+    color: #f3ecec;
+  }
   #index a:hover img {
     margin-top: 2.5px;
     padding: 0;
@@ -196,17 +200,10 @@ html a:hover {
 }
 
 #index .hl, #index #resume {
-  border: 2px dotted #f5eeeee0;
-  color: #f5eeeee0;
-  background: #43b649;
-  opacity: 0.85;
-  border-radius: 25px;
-  padding: 0 1rem;
-  display: inline-block;
+  text-decoration: underline;
 }
 
 #index .hl-underline {
-  text-decoration: underline;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
   text-decoration-thickness: 3.75px;
@@ -234,8 +231,7 @@ html a:hover {
 #index .hover-reveal__img {
   background-size: cover;
   background-position: 50% 50%;
-  border: 3px dotted #f5eeeee0;
-  border-radius: 25px;
+  border: 1px solid red;
   opacity: 0.85;
 }
 
@@ -984,7 +980,7 @@ html a:hover {
   width: 48px;
   height: 48px;
   margin: -24px 0px 0px -24px;
-  background-color: #43b649;
+  background-color: #e4dede;
   border: 1px dotted #f5eeeee0;
   opacity: 0.85;
   border-radius: 50%;
@@ -999,7 +995,7 @@ html a:hover {
   width: 24px;
   height: 24px;
   margin: -12px 0px 0px -12px;
-  background-color: #f5eeeee0;
+  background-color: #ffe600;
   border: 1px dotted #43b649;
   opacity: 0.85;
   border-radius: 50%;

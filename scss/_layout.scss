@@ -61,17 +61,19 @@ $text-bg: #43b649;
     // }
 
     .hl, #resume {
-        border: 2px dotted $color-scheme;
-        color: $color-scheme;
-        background: $text-bg;
-        opacity: 0.85;
-        border-radius: 25px;
-        padding: 0 1rem;
-        display: inline-block;
+        // border: 2px dotted $color-scheme;
+        // color: $color-scheme;
+        // background: $text-bg;
+        // opacity: 0.85;
+        // border-radius: 25px;
+        // padding: 0 1rem;
+        // display: inline-block;
+
+        text-decoration: underline;
     }
 
     .hl-underline {
-        text-decoration: underline;
+        // text-decoration: underline;
         text-decoration-style: dotted;
         text-decoration-thickness: 3.75px;
         // text-decoration-color: $color-scheme;
@@ -99,8 +101,9 @@ $text-bg: #43b649;
     .hover-reveal__img {
         background-size: cover;
         background-position: 50% 50%;
-        border: 3px dotted $color-scheme;
-        border-radius: 25px;
+        // border: 3px dotted $color-scheme;
+        border: 1px solid red;
+        // border-radius: 25px;
         opacity: 0.85;
     }
     

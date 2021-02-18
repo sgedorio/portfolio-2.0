@@ -1,6 +1,10 @@
 $m-circ-d: 48px;
 $m-mid-d: 24px;
 
+$bg-big: rgb(228, 222, 222);
+$bg-small: rgb(255, 230, 0);
+// $bg-small: rgb(223, 53, 41);
+
 //mouse cursor
 #mouse-circle {
     position: absolute;
@@ -10,7 +14,8 @@ $m-mid-d: 24px;
     // margin: ($m-circ-d/2) * -1px 0px 0px ($m-circ-d/2) * -1px;
     // margin: -16px 0px 0px -16px;
     margin: (-$m-circ-d/2) 0px 0px (-$m-circ-d/2);
-    background-color: $text-bg;
+    // background-color: $text-bg;
+    background-color: $bg-big;
     border: 1px dotted $color-scheme;
     opacity: 0.85;
     border-radius: 50%;
@@ -24,7 +29,7 @@ $m-mid-d: 24px;
     width: $m-mid-d;
     height: $m-mid-d;
     margin: (-$m-mid-d/2) 0px 0px (-$m-mid-d/2);
-    background-color: $color-scheme;
+    background-color: $bg-small;
     border: 1px dotted $text-bg;
     opacity: 0.85;
     border-radius: 50%;
