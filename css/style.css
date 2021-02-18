@@ -53,8 +53,12 @@ html {
   font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
   font-size: 10px;
   font-weight: 400;
-  cursor: crosshair;
+  cursor: none;
   scroll-behavior: smooth;
+}
+
+html a:hover {
+  cursor: none;
 }
 
 #index {
@@ -191,23 +195,23 @@ html {
   line-height: 1.125;
 }
 
-#index .number {
-  border: 2px dotted #34bb3f;
-  border-radius: 25px;
-  padding: 0 0.75rem;
-  background-color: #ebe4e5e0;
-  color: #34bb3f;
-  opacity: 0.85;
-}
-
 #index .hl, #index #resume {
-  border: 2px dotted #34bb3f;
-  color: #34bb3f;
-  background: #ebe4e5e0;
+  border: 2px dotted #f5eeeee0;
+  color: #f5eeeee0;
+  background: #43b649;
   opacity: 0.85;
   border-radius: 25px;
   padding: 0 1rem;
   display: inline-block;
+}
+
+#index .hl-underline {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  text-decoration-thickness: 3.75px;
+  -webkit-text-decoration-color: #43b649;
+          text-decoration-color: #43b649;
 }
 
 #index .hover-reveal {
@@ -230,8 +234,9 @@ html {
 #index .hover-reveal__img {
   background-size: cover;
   background-position: 50% 50%;
-  border: 3px dotted #34bb3f;
+  border: 3px dotted #f5eeeee0;
   border-radius: 25px;
+  opacity: 0.85;
 }
 
 #index #top {
@@ -972,6 +977,34 @@ html {
   #project-page .writeup p, #project-page .writeup ol, #project-page .writeup ul, #project-page .writeup h2 {
     width: 100%;
   }
+}
+
+#mouse-circle {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: -24px 0px 0px -24px;
+  background-color: #43b649;
+  border: 1px dotted #f5eeeee0;
+  opacity: 0.85;
+  border-radius: 50%;
+  pointer-events: none !important;
+  -webkit-box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+          box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+  z-index: -1000;
+}
+
+#mouse-middle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: -12px 0px 0px -12px;
+  background-color: #f5eeeee0;
+  border: 1px dotted #43b649;
+  opacity: 0.85;
+  border-radius: 50%;
+  pointer-events: none !important;
+  z-index: 1000;
 }
 
 .navigation {

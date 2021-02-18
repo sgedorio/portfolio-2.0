@@ -76,6 +76,7 @@ function checkPos() {
             // element.classList.add('sm-hl-trigger');
             // console.log(element.style.background);
             element.style.backgroundPosition = 'left bottom';
+            // element.style.color = 'white';
         // } else element.classList.remove('sm-hl-trigger');
         } else element.style.backgroundPosition = 'right bottom'
     }

@@ -1,12 +1,30 @@
 
 $top-bottom: 7.5rem;
 $column-spacing: 15rem;
+// 
+// main
+// $color-scheme:#34bb3f;
+// $text-bg: #ebe4e5e0;
+
+// orange
+// $color-scheme:#e7e7e3;
+// $text-bg: #ff1919;
+
+//green & grey bg
+// $color-scheme: #646464e0;
+// $text-bg: #c5e72b;
+
+//dark green bg
+$color-scheme: #f5eeeee0;
+$text-bg: #43b649;
+
+//orange
+// $color-scheme: #f5f1eee0;
+// $text-bg: #e98707;
 
 //home page
 #index {
-    $color-scheme:#34bb3f;
-    // $color-scheme:#f10808;
-    $text-bg: #ebe4e5e0;
+    
     // background-color: rgb(16, 17, 16);
 
     // margin: $top-bottom 8rem 7.5rem 7.5rem;
@@ -15,7 +33,7 @@ $column-spacing: 15rem;
     // border-right: 3px dotted $color-scheme;
     // background-color: black;
     // filter: invert(1);
-    // color: white;
+    // color: rgb(12, 32, 17);
     // border-radius: 25px;
     width: 1000px;
     // margin: 5px auto;
@@ -27,19 +45,20 @@ $column-spacing: 15rem;
     display: flex;
     flex-flow: column nowrap;
     line-height: 1.125;
+    // color: $text-bg;
     // background: linear-gradient(270deg, rgb(232, 250, 255), rgb(255, 230, 209));
 
     // $color-scheme:rgb(31, 182, 44);
     // $text-bg: white;
  
-    .number {
-        border: 2px dotted $color-scheme;
-        border-radius: 25px;
-        padding: 0 0.75rem;
-        background-color: $text-bg;
-        color: $color-scheme;
-        opacity: 0.85;
-    }
+    // .number {
+    //     border: 2px dotted $color-scheme;
+    //     border-radius: 25px;
+    //     padding: 0 0.75rem;
+    //     background-color: $text-bg;
+    //     color: $color-scheme;
+    //     opacity: 0.85;
+    // }
 
     .hl, #resume {
         border: 2px dotted $color-scheme;
@@ -49,6 +68,14 @@ $column-spacing: 15rem;
         border-radius: 25px;
         padding: 0 1rem;
         display: inline-block;
+    }
+
+    .hl-underline {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 3.75px;
+        // text-decoration-color: $color-scheme;
+        text-decoration-color: $text-bg;
     }
 
     .hover-reveal {
@@ -74,8 +101,11 @@ $column-spacing: 15rem;
         background-position: 50% 50%;
         border: 3px dotted $color-scheme;
         border-radius: 25px;
+        opacity: 0.85;
     }
     
+
+
     #top {
         display: flex;
         flex-flow: row nowrap;

@@ -55,7 +55,11 @@ html {
     // background-color: #F5F5F5;
     font-size: 10px;
     font-weight: 400;
-    cursor: crosshair;
+    cursor: none;
+    a:hover {
+        cursor: none;
+    }
+    // cursor: url("/img/middle-cursor.svg"), auto;
     scroll-behavior: smooth;
 }
 
@@ -63,8 +67,6 @@ html {
 #index {
     font-size: 3rem;
     text-transform: uppercase;
-
-    
 
     a {
         text-decoration: none;
