@@ -113,35 +113,35 @@ class HoverImageFx {
 [...document.querySelectorAll('[data-fx="1"] > h1 > a')].forEach(link => new HoverImageFx(link));
 
 //mouse cursor
-if (window.matchMedia("(min-width: 768px)").matches) {
-    let mousePosX = 0,
-        mousePosY = 0,
-        mouseCircle = document.getElementById("mouse-circle"),
-        mouseMiddle = document.getElementById("mouse-middle");
+// if (window.matchMedia("(min-width: 768px)").matches) {
+    // let mousePosX = 0,
+    //     mousePosY = 0,
+    //     mouseCircle = document.getElementById("mouse-outer"),
+    //     mouseMiddle = document.getElementById("mouse-inner");
         
 
-    document.onmousemove = (e) => {
-        mousePosX = e.pageX;
-        mousePosY = e.pageY;
-    };
+    // document.onmousemove = (e) => {
+    //     mousePosX = e.pageX;
+    //     mousePosY = e.pageY;
+    // };
 
-    let delay = 6,
-        revisedMousePosX = 0,
-        revisedMousePosY = 0;
+    // let delay = 6,
+    //     revisedMousePosX = 0,
+    //     revisedMousePosY = 0;
 
-    function delayMouseFollow() {
-        requestAnimationFrame(delayMouseFollow);
+    // function delayMouseFollow() {
+    //     requestAnimationFrame(delayMouseFollow);
 
-        revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
-        revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+    //     revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+    //     revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
 
-        mouseCircle.style.top = revisedMousePosY + "px";
-        mouseCircle.style.left = revisedMousePosX + "px";
+    //     mouseCircle.style.top = revisedMousePosY + "px";
+    //     mouseCircle.style.left = revisedMousePosX + "px";
 
-        mouseMiddle.style.top = mousePosY + "px";
-        mouseMiddle.style.left = mousePosX + "px";
+    //     mouseMiddle.style.top = mousePosY + "px";
+    //     mouseMiddle.style.left = mousePosX + "px";
 
-    }
-    delayMouseFollow();
+    // }
+    // delayMouseFollow();
     
-}
+// }

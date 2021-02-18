@@ -84,50 +84,40 @@ $color-scheme: #43b649;
         color: inherit;
     }
 
-    .giddyup {
-        font-family: giddyup-std, sans-serif;
-        font-size: 3.15rem;
-    }
-
     @media (hover: hover) and (min-width: 540px) {
-        a:hover {
-            // font-family: giddyup-std, sans-serif;
-            // font-size: 3.15rem;
-            // line-height: 0;
-            // cursor: crosshair;
-            background-color: $color-scheme;
-            color: $text-bg;
-            
-            // border: 1px solid rgb(235, 0, 0);
-    
-            img {
-                margin-top: 2.5px;
-                padding: 0;
+        #resume, #description, #middle {
+            a:hover {
+                background-color: $color-scheme;
+                color: $text-bg;
             }
+        }
+                        
+        a:hover img {
+            margin-top: 2.5px;
+            padding: 0;
         }
     }
 
     @media (max-width: 540px) {
         font-size: 2.5rem;
-
-        .giddyup {
-            font-size: 2.5rem;
-        }
-
-        #name {
-            font-family: giddyup-std, sans-serif;
-        }
     }
 }
 
 //project pages
 #grid-container {
     font-size: 3rem;
+
+    .green {
+        background-color: $color-scheme;
+        color: $text-bg;
+    }
+
     .title { 
         text-transform: uppercase;
         // font-family: giddyup-std, sans-serif;
         font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
-        font-size: 2.5rem;
+        // font-size: 2.5rem;
+        font-size: 2.75rem;
         font-weight: 400;
     }
 
@@ -137,6 +127,7 @@ $color-scheme: #43b649;
             color: inherit;
         }
 
+        margin-top: 0.5rem;
         font-size: 2.75rem;
         font-family: freight-big-pro, serif;
         font-weight: 300;

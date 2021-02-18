@@ -71,13 +71,8 @@ html a:hover {
   color: inherit;
 }
 
-#index .giddyup {
-  font-family: giddyup-std, sans-serif;
-  font-size: 3.15rem;
-}
-
 @media (hover: hover) and (min-width: 540px) {
-  #index a:hover {
+  #index #resume a:hover, #index #description a:hover, #index #middle a:hover {
     background-color: #43b649;
     color: #f5eeeee0;
   }
@@ -91,26 +86,26 @@ html a:hover {
   #index {
     font-size: 2.5rem;
   }
-  #index .giddyup {
-    font-size: 2.5rem;
-  }
-  #index #name {
-    font-family: giddyup-std, sans-serif;
-  }
 }
 
 #grid-container {
   font-size: 3rem;
 }
 
+#grid-container .green {
+  background-color: #43b649;
+  color: #f5eeeee0;
+}
+
 #grid-container .title {
   text-transform: uppercase;
   font-family: Pragmatica, "Microsoft-Sans-Serif", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 400;
 }
 
 #grid-container .author {
+  margin-top: 0.5rem;
   font-size: 2.75rem;
   font-family: freight-big-pro, serif;
   font-weight: 300;
@@ -210,38 +205,6 @@ html a:hover {
   background: #43b649;
 }
 
-#index .hl-underline {
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-  text-decoration-thickness: 3.75px;
-  -webkit-text-decoration-color: #f5eeeee0;
-          text-decoration-color: #f5eeeee0;
-}
-
-#index .hover-reveal {
-  position: fixed;
-  width: 350px;
-  height: 250px;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  opacity: 0;
-}
-
-#index .hover-reveal__inner,
-#index .hover-reveal__img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-#index .hover-reveal__img {
-  background-size: cover;
-  background-position: 50% 50%;
-  border: 1px solid #43b649;
-  opacity: 0.85;
-}
-
 #index #top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,6 +275,36 @@ html a:hover {
   white-space: nowrap;
 }
 
+@media (hover: hover) {
+  #index .hover-reveal {
+    position: fixed;
+    width: 350px;
+    height: 276.5px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+  }
+  #index .hover-reveal__inner,
+  #index .hover-reveal__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #index .hover-reveal__img {
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+
+@media (hover: none) {
+  #index a, #index .hl-underline {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #43b649;
+            text-decoration-color: #43b649;
+  }
+}
+
 @media (max-width: 1280px) {
   #index {
     width: 80%;
@@ -348,11 +341,9 @@ html a:hover {
     white-space: nowrap;
   }
   #index #middle {
-    margin-top: 3.75rem;
     width: 250px;
   }
   #index #bottom {
-    margin-top: 3.75rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -365,7 +356,7 @@ html a:hover {
     margin-bottom: 1.875rem;
   }
   #index #bottom #links {
-    margin-top: 3.75rem;
+    margin-top: 7.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -982,13 +973,13 @@ html a:hover {
   }
 }
 
-#mouse-circle {
+#mouse-outer {
   position: absolute;
   width: 48px;
   height: 48px;
   margin: -24px 0px 0px -24px;
-  background-color: #43b649;
-  border: 1px dotted #f5eeeee0;
+  background-color: #f5eeeee0;
+  border: 1px dotted #43b649;
   opacity: 0.85;
   border-radius: 50%;
   pointer-events: none !important;
@@ -997,13 +988,13 @@ html a:hover {
   z-index: -1000;
 }
 
-#mouse-middle {
+#mouse-inner {
   position: absolute;
   width: 24px;
   height: 24px;
   margin: -12px 0px 0px -12px;
-  background-color: #f5eeeee0;
-  border: 1px dotted #43b649;
+  background-color: #43b649;
+  border: 1px dotted #f5eeeee0;
   opacity: 0.85;
   border-radius: 50%;
   pointer-events: none !important;
@@ -1091,6 +1082,18 @@ html a:hover {
 @media (max-width: 1024px) {
   .navigation {
     text-align: left;
+  }
+}
+
+@media (hover: none) {
+  #mouse-outer, #mouse-inner {
+    display: none;
+  }
+  html {
+    cursor: auto;
+  }
+  html a:hover {
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */

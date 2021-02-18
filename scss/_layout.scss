@@ -1,9 +1,6 @@
 
 $top-bottom: 7.5rem;
 $column-spacing: 15rem;
-// 
-// main
-
 
 // orange
 // $color-scheme:#e7e7e3;
@@ -13,111 +10,30 @@ $column-spacing: 15rem;
 // $color-scheme: #646464e0;
 // $text-bg: #c5e72b;
 
-//dark green bg
-
-
 //orange
 // $color-scheme: #f5f1eee0;
 // $text-bg: #e98707;
 
 //home page
 #index {
-    
-    // background-color: rgb(16, 17, 16);
-
-    // margin: $top-bottom 8rem 7.5rem 7.5rem;
-    // width: max-content;
-    // border-left: 3px dotted $color-scheme;
-    // border-right: 3px dotted $color-scheme;
-    // background-color: black;
-    // filter: invert(1);
-    // color: rgb(12, 32, 17);
-    // border-radius: 25px;
     width: 1000px;
-    // margin: 5px auto;
-    // padding: $top-bottom;
     margin: $top-bottom auto;
-    // width: 100%;
-    // width: none;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     line-height: 1.125;
-    // color: $text-bg;
-    // background: linear-gradient(270deg, rgb(232, 250, 255), rgb(255, 230, 209));
-
-    // $color-scheme:rgb(31, 182, 44);
-    // $text-bg: white;
- 
-    // .number {
-    //     border: 2px dotted $color-scheme;
-    //     border-radius: 25px;
-    //     padding: 0 0.75rem;
-    //     background-color: $text-bg;
-    //     color: $color-scheme;
-    //     opacity: 0.85;
-    // }
 
     .number {
-        // border: 2px dotted $color-scheme;
-        // border-radius: 25px;
         padding: 0 0.75rem;
         background-color: $color-scheme;
-        color: $text-bg;
-        // opacity: 0.85;
+        color: $text-bg;    
     }
 
     .hl {
-        // border: 2px dotted $color-scheme;
-        // color: $color-scheme;
-        // background: $text-bg;
         color: $text-bg;
         background: $color-scheme;
-        // opacity: 0.85;
-        // border-radius: 25px;
-        // padding: 0 1rem;
-        // display: inline-block;
-
-        // text-decoration: underline;
-    }
-
-    .hl-underline {
-        // text-decoration: underline;
-        text-decoration-style: dotted;
-        text-decoration-thickness: 3.75px;
-        // text-decoration-color: $color-scheme;
-        text-decoration-color: $text-bg;
-    }
-
-    .hover-reveal {
-        position: fixed;
-        width: 350px;
-        height: 250px;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        opacity: 0;
-        // filter: drop-shadow(5px 5px 4px #919191);
-    }
-
-    .hover-reveal__inner,
-    .hover-reveal__img {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .hover-reveal__img {
-        background-size: cover;
-        background-position: 50% 50%;
-        // border: 3px dotted $color-scheme;
-        border: 1px solid $color-scheme;
-        // border-radius: 25px;
-        opacity: 0.85;
     }
     
-
-
     #top {
         display: flex;
         flex-flow: row nowrap;
@@ -166,16 +82,50 @@ $column-spacing: 15rem;
         }
     }
 
+    //hover effects for projects
+    @media (hover: hover) {
+        .hover-reveal {
+            position: fixed;
+            width: 350px;
+            height: 276.5px;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            
+            // box-shadow: 3px 3px 8px 4px #888888;
+
+        }
+    
+        .hover-reveal__inner,
+        .hover-reveal__img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    
+        .hover-reveal__img {
+            background-size: cover;
+            background-position: 50% 50%;
+            // border: 1px dotted $color-scheme;
+            // border: 2px dotted $color-scheme;
+            // opacity: 0.85;
+        }
+    }
+
+    //easy to show links in mobile
+    @media (hover: none) {
+        a, .hl-underline {
+            text-decoration: underline;
+            text-decoration-color: $color-scheme;
+        }
+    }
+
     @media (max-width: 1280px) {
         width: 80%;
     }
 
     @media (max-width: 1024px) {
-        // background-color: red;
-        // width: 90%;
-        // margin: $top-bottom 8rem 7.5rem 7.5rem;
-        // width: 100%;
-
         #middle {
             white-space: normal;
         }
@@ -203,12 +153,12 @@ $column-spacing: 15rem;
         }
 
         #middle {
-            margin-top: $top-bottom / 2;
+            // margin-top: $top-bottom / 2;
             width: 250px;
         }
 
         #bottom {
-            margin-top: $top-bottom / 2;
+            // margin-top: $top-bottom / 2;
             flex-direction: column;
 
             #description {
@@ -219,7 +169,7 @@ $column-spacing: 15rem;
             }
 
             #links {
-                margin-top: $top-bottom / 2;
+                margin-top: $top-bottom;
                 align-self: flex-start;
                 
                 .icons {

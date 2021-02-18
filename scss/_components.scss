@@ -6,7 +6,7 @@ $m-mid-d: 24px;
 // $bg-small: rgb(223, 53, 41);
 
 //mouse cursor
-#mouse-circle {
+#mouse-outer {
     position: absolute;
     // width: $m-circ-d;
     width: $m-circ-d;
@@ -15,8 +15,8 @@ $m-mid-d: 24px;
     // margin: -16px 0px 0px -16px;
     margin: (-$m-circ-d/2) 0px 0px (-$m-circ-d/2);
     
-    background-color: $color-scheme;
-    border: 1px dotted $text-bg;
+    background-color: $text-bg;
+    border: 1px dotted $color-scheme;
     opacity: 0.85;
     border-radius: 50%;
     pointer-events: none !important;
@@ -24,14 +24,16 @@ $m-mid-d: 24px;
     z-index: -1000;
 }
 
-#mouse-middle {
+#mouse-inner {
     position: absolute;
     width: $m-mid-d;
     height: $m-mid-d;
     margin: (-$m-mid-d/2) 0px 0px (-$m-mid-d/2);
     // background-color: $bg-small;
-    background-color: $text-bg;
-    border: 1px dotted $color-scheme;
+    // background-color: $text-bg;
+    // border: 1px dotted $color-scheme;
+    background-color: $color-scheme;
+    border: 1px dotted $text-bg;
     opacity: 0.85;
     border-radius: 50%;
     pointer-events: none !important;
@@ -121,5 +123,18 @@ $m-mid-d: 24px;
 @media (max-width: 1024px) {
     .navigation {
         text-align: left;
+    }
+}
+
+@media (hover: none) {
+    #mouse-outer, #mouse-inner {
+        display: none;
+    }
+
+    html {
+        cursor: auto;
+        a:hover {
+            cursor: pointer;
+        }
     }
 }
