@@ -78,8 +78,8 @@ html a:hover {
 
 @media (hover: hover) and (min-width: 540px) {
   #index a:hover {
-    background-color: #111010;
-    color: #f3ecec;
+    background-color: #43b649;
+    color: #f5eeeee0;
   }
   #index a:hover img {
     margin-top: 2.5px;
@@ -199,16 +199,23 @@ html a:hover {
   line-height: 1.125;
 }
 
-#index .hl, #index #resume {
-  text-decoration: underline;
+#index .number {
+  padding: 0 0.75rem;
+  background-color: #43b649;
+  color: #f5eeeee0;
+}
+
+#index .hl {
+  color: #f5eeeee0;
+  background: #43b649;
 }
 
 #index .hl-underline {
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
   text-decoration-thickness: 3.75px;
-  -webkit-text-decoration-color: #43b649;
-          text-decoration-color: #43b649;
+  -webkit-text-decoration-color: #f5eeeee0;
+          text-decoration-color: #f5eeeee0;
 }
 
 #index .hover-reveal {
@@ -231,7 +238,7 @@ html a:hover {
 #index .hover-reveal__img {
   background-size: cover;
   background-position: 50% 50%;
-  border: 1px solid red;
+  border: 1px solid #43b649;
   opacity: 0.85;
 }
 
@@ -980,7 +987,7 @@ html a:hover {
   width: 48px;
   height: 48px;
   margin: -24px 0px 0px -24px;
-  background-color: #e4dede;
+  background-color: #43b649;
   border: 1px dotted #f5eeeee0;
   opacity: 0.85;
   border-radius: 50%;
@@ -995,7 +1002,7 @@ html a:hover {
   width: 24px;
   height: 24px;
   margin: -12px 0px 0px -12px;
-  background-color: #ffe600;
+  background-color: #f5eeeee0;
   border: 1px dotted #43b649;
   opacity: 0.85;
   border-radius: 50%;

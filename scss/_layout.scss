@@ -3,8 +3,7 @@ $top-bottom: 7.5rem;
 $column-spacing: 15rem;
 // 
 // main
-// $color-scheme:#34bb3f;
-// $text-bg: #ebe4e5e0;
+
 
 // orange
 // $color-scheme:#e7e7e3;
@@ -15,8 +14,7 @@ $column-spacing: 15rem;
 // $text-bg: #c5e72b;
 
 //dark green bg
-$color-scheme: #f5eeeee0;
-$text-bg: #43b649;
+
 
 //orange
 // $color-scheme: #f5f1eee0;
@@ -60,16 +58,27 @@ $text-bg: #43b649;
     //     opacity: 0.85;
     // }
 
-    .hl, #resume {
+    .number {
+        // border: 2px dotted $color-scheme;
+        // border-radius: 25px;
+        padding: 0 0.75rem;
+        background-color: $color-scheme;
+        color: $text-bg;
+        // opacity: 0.85;
+    }
+
+    .hl {
         // border: 2px dotted $color-scheme;
         // color: $color-scheme;
         // background: $text-bg;
+        color: $text-bg;
+        background: $color-scheme;
         // opacity: 0.85;
         // border-radius: 25px;
         // padding: 0 1rem;
         // display: inline-block;
 
-        text-decoration: underline;
+        // text-decoration: underline;
     }
 
     .hl-underline {
@@ -102,7 +111,7 @@ $text-bg: #43b649;
         background-size: cover;
         background-position: 50% 50%;
         // border: 3px dotted $color-scheme;
-        border: 1px solid red;
+        border: 1px solid $color-scheme;
         // border-radius: 25px;
         opacity: 0.85;
     }
