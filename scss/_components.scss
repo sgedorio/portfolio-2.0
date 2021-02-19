@@ -151,8 +151,9 @@ $m-mid-d: 24px;
 }
 
 @media (max-width: 1024px) {
-    .navigation {
-        text-align: left;
+    .navigation-desktop {
+        // text-align: left;
+        margin-bottom: 1.5rem;
     }
 }
 

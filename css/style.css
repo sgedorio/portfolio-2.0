@@ -1099,8 +1099,8 @@ html a:hover {
 }
 
 @media (max-width: 1024px) {
-  .navigation {
-    text-align: left;
+  .navigation-desktop {
+    margin-bottom: 1.5rem;
   }
 }
 
