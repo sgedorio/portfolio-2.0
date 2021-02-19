@@ -7,25 +7,28 @@ $m-mid-d: 24px;
 
 //mouse cursor
 #mouse-outer {
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     // width: $m-circ-d;
     width: $m-circ-d;
     height: $m-circ-d;
     // margin: ($m-circ-d/2) * -1px 0px 0px ($m-circ-d/2) * -1px;
     // margin: -16px 0px 0px -16px;
     margin: (-$m-circ-d/2) 0px 0px (-$m-circ-d/2);
-    
+    // background-color: $color-scheme;
+    // border: 1px dotted $text-bg;
     background-color: $text-bg;
     border: 1px dotted $color-scheme;
     opacity: 0.85;
     border-radius: 50%;
     pointer-events: none !important;
     box-shadow: 0 0 16px rgba(255, 255, 255, 0);
-    z-index: -1000;
+    z-index: 1000;
 }
 
 #mouse-inner {
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     width: $m-mid-d;
     height: $m-mid-d;
     margin: (-$m-mid-d/2) 0px 0px (-$m-mid-d/2);
@@ -40,28 +43,54 @@ $m-mid-d: 24px;
     z-index: 1000;
 }
 
-.navigation {
-    font-size: 1.75rem;
+.navigation-desktop {
+    // font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    // opacity: 1;
-    // font-family: freight-big-pro, serif;
-    // font-style: italic; 
-    // font-weight: 300;
+    // margin-bottom: 1rem;
+    // padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    // align-items: flex-end;
+    flex-direction: column;
     line-height: 1;
-    text-align: right;
+    // text-align: right;
+    // padding: 1rem 0;
+
     a {
-        text-decoration: none;
-        color: black;
+        // text-decoration: none;
+        // color: black;
+        display: inline;
+        // opacity: 0.5;
+        // background-color: $color-scheme;
+        // color: $text-bg !important;
+        // padding: 0.25rem;
+        // border: 1px solid black;
+        // margin-bottom: 1rem;
+        // text-decoration: underline !important;
+        // text-decoration-color: $color-scheme !important;
+        color: $color-scheme !important;
+        border: 1px dotted $color-scheme;
+        background-color: $text-bg;
+        // -webkit-box-shadow: 4px 4px 6px 0px rgba(67,182,73,0.25); 
+        // box-shadow: 4px 4px 6px 0px rgba(67,182,73,0.25);
+        padding: 0 0.25rem;
+    }
+
+    a:hover {
+        // background-color: $color-scheme;
+        // color: $text-bg !important;
+        opacity: 1;
+        color: $text-bg !important;
+        background-color: $color-scheme;
     }
 
     div {
-        opacity: 0.3;
+        margin-bottom: 0.75rem;
+        // margin-bottom: 1.25rem;
     }
-
-    div:hover {
-        opacity: 1;
-    }
+    
 }
 
 .icons img {

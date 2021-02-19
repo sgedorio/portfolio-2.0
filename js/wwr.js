@@ -16,8 +16,13 @@ function checkPos() {
         if (posFromTop >= 0 && posFromBottom <= windowHeight) {
             // element.classList.add('wwr-hl-trigger');
             element.style.backgroundPosition = 'left bottom';
+            element.style.color = 'white';
+
         // } else element.classList.remove('wwr-hl-trigger');
-        } else element.style.backgroundPosition = 'right bottom'
+        } else {
+            element.style.backgroundPosition = 'right bottom'
+            element.style.color = 'black';
+        }
 
     }
 }

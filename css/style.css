@@ -71,7 +71,7 @@ html a:hover {
   color: inherit;
 }
 
-@media (hover: hover) and (min-width: 540px) {
+@media (hover: hover) {
   #index #resume a:hover, #index #description a:hover, #index #middle a:hover {
     background-color: #43b649;
     color: #f5eeeee0;
@@ -94,7 +94,7 @@ html a:hover {
 
 #grid-container .green {
   background-color: #43b649;
-  color: #f5eeeee0;
+  color: #f5eeeee0 !important;
 }
 
 #grid-container .title {
@@ -488,11 +488,6 @@ html a:hover {
 
 #project-page .writeup .overview .overview-right {
   width: 50%;
-  margin-right: 75px;
-}
-
-#project-page .writeup .overview .overview-left {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,8 +500,13 @@ html a:hover {
           justify-content: space-between;
 }
 
-#project-page .writeup .overview .overview-left .timeline, #project-page .writeup .overview .overview-left .tools {
+#project-page .writeup .overview .overview-right .timeline, #project-page .writeup .overview .overview-right .tools {
   margin-bottom: 1.5rem;
+}
+
+#project-page .writeup .overview .overview-left {
+  margin-right: 75px;
+  width: 50%;
 }
 
 #project-page .writeup .contributions h2 {
@@ -640,11 +640,11 @@ html a:hover {
 }
 
 #project-page .writeup .wwr-values ul :nth-child(1) {
-  background-color: #FAACE9;
+  background-color: #fca1a1;
 }
 
 #project-page .writeup .wwr-values ul :nth-child(2) {
-  background-color: #A1FF80;
+  background-color: #eede51;
 }
 
 #project-page .writeup .wwr-values ul :nth-child(3) {
@@ -658,12 +658,12 @@ html a:hover {
 }
 
 #project-page .writeup .quality {
-  background-color: #FAACE9;
+  background-color: #fca1a1;
   padding: 1px;
 }
 
 #project-page .writeup .inclusive {
-  background-color: #A1FF80;
+  background-color: #eede51;
   padding: 1px;
 }
 
@@ -675,8 +675,8 @@ html a:hover {
 @-webkit-keyframes sm-hl-animation {}
 
 @keyframes sm-hl-animation {}#project-page .writeup .hl {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FFF1A6), color-stop(50%, white));
-  background: linear-gradient(to right, #FFF1A6 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #43b649), color-stop(50%, white));
+  background: linear-gradient(to right, #43b649 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   -webkit-transition: all 0.75s ease-out;
@@ -696,7 +696,7 @@ html a:hover {
   grid-row: 1 / 4;
   padding-left: 5rem;
   white-space: nowrap;
-  top: 3.75rem;
+  top: 3.25rem;
   position: -webkit-sticky;
   position: sticky;
 }
@@ -712,7 +712,7 @@ html a:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  top: calc(100vh - 7.5rem - 90px - 1rem);
+  top: calc(100vh - 7.5rem - 60px);
   position: -webkit-sticky;
   position: sticky;
   display: -webkit-box;
@@ -766,6 +766,15 @@ html a:hover {
   margin-top: 2rem;
 }
 
+#project-page .wdc-intro a {
+  color: black;
+}
+
+#project-page .wdc-intro a:hover {
+  background: #43b649;
+  color: #f5eeeee0;
+}
+
 #project-page .wdc p {
   text-transform: uppercase;
   margin-bottom: 2.5rem;
@@ -814,11 +823,10 @@ html a:hover {
 
 @media (max-width: 1024px) {
   #project-page #grid-container {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    -ms-grid-columns: minmax(min-content, 80%);
+        grid-template-columns: minmax(-webkit-min-content, 80%);
+        grid-template-columns: minmax(min-content, 80%);
     grid-auto-rows: auto;
-    margin: 0 7.5rem;
-    width: 95%;
   }
   #project-page .wdc-intro {
     margin-bottom: 2.25rem;
@@ -865,7 +873,7 @@ html a:hover {
     grid-row: 6 / 7;
     top: auto;
     position: static;
-    padding-top: 1.75rem;
+    margin-top: 12.5rem;
     padding-bottom: 7.5rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -874,10 +882,6 @@ html a:hover {
 }
 
 @media (max-width: 768px) {
-  #project-page #grid-container {
-    margin-left: 3.75rem;
-    margin-right: 3.75rem;
-  }
   #project-page .visual {
     margin-bottom: 1.5rem;
   }
@@ -974,7 +978,7 @@ html a:hover {
 }
 
 #mouse-outer {
-  position: absolute;
+  position: fixed;
   width: 48px;
   height: 48px;
   margin: -24px 0px 0px -24px;
@@ -985,11 +989,11 @@ html a:hover {
   pointer-events: none !important;
   -webkit-box-shadow: 0 0 16px rgba(255, 255, 255, 0);
           box-shadow: 0 0 16px rgba(255, 255, 255, 0);
-  z-index: -1000;
+  z-index: 1000;
 }
 
 #mouse-inner {
-  position: absolute;
+  position: fixed;
   width: 24px;
   height: 24px;
   margin: -12px 0px 0px -12px;
@@ -1001,25 +1005,39 @@ html a:hover {
   z-index: 1000;
 }
 
-.navigation {
-  font-size: 1.75rem;
+.navigation-desktop {
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 1;
-  text-align: right;
 }
 
-.navigation a {
-  text-decoration: none;
-  color: black;
+.navigation-desktop a {
+  display: inline;
+  color: #43b649 !important;
+  border: 1px dotted #43b649;
+  background-color: #f5eeeee0;
+  padding: 0 0.25rem;
 }
 
-.navigation div {
-  opacity: 0.3;
-}
-
-.navigation div:hover {
+.navigation-desktop a:hover {
   opacity: 1;
+  color: #f5eeeee0 !important;
+  background-color: #43b649;
+}
+
+.navigation-desktop div {
+  margin-bottom: 0.75rem;
 }
 
 .icons img {

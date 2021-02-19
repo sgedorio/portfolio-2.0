@@ -28,9 +28,12 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="mouse-outer"></div>
+        <div id="mouse-inner"></div>
+
         <div id='grid-container'>
             <!-- <div id="left-container"> -->
-                <div class="title">WREK Radio Website Redesign (Desktop & Mobile)</div>
+                <div class="title"><span class="green">WREK Radio Website Redesign (Desktop & Mobile)</span></div>
                 <div class="author">By Sean Gedorio & <a href="https://shireenhashemi.com">Shireen Hashemi</a></div>
                 <div style="margin-bottom: 2.5rem" class="visual">
                     <div class="desktop"> <!-- 1080x675-->
@@ -58,21 +61,6 @@
                         <div class="overview-left">
                             <!-- <p>Our website redesign for Georgia Tech’s college radio station, <a href=”https://wrek.org”>WREK Atlanta</a>, addresses the site’s weaknesses in how content is organized and how inflexible its current design is for smaller devices.</p>  -->
                             <!-- <p><span class="hl">The responsive, grid-based design that we propose tidies up the existing information architecture while bringing life to WREK’s eccentric personality for both desktop and mobile environments.</span></p> -->
-                            <div class="timeline">
-                                <h2>Timeline</h2>
-                                <p>
-                                    July 2019 - Aug. 2019 (Research)<br>
-                                    Sept. 2020 – Oct. 2020 (Design) 
-                                </p>
-                            </div>
-                            <div class="tools">
-                                <h2>Tools</h2>
-                                <p>Sketch, Figma</p>
-                            </div>
-                            <div class="my-role"><h2>My Role</h2>
-                            <p>Project Lead, UX/UI Designer</p></div>
-                        </div>
-                        <div class="overview-right">
                             <h2>My Contributions</h2>
                             <!-- <p>Alongside research and design, I primarily took on a Project Manager-type role, planning and organizing the various tasks and deadlines that needed to be done for this project, from initial research activities to final prototyping.</p> -->
                             <p>For the research, I:
@@ -93,14 +81,21 @@
                             </p>
                             <p>I copywrote most of the content for the new Join page.</p>
                             <p>I recorded all of the prototype animations on this page through OBS/Premiere Pro.</p>
-                            <!-- <h2 class="section">
-                                <u>Timeline</u><br>
-                                July - August 2019 (Research)<br>
-                                September – October 2020 (Design) 
-                            </h2>
-                            <h2 class="section"><u>Tools</u>: Sketch, Figma</h2>
-                            <h2 class="section"><u>My Role</u>: Project Lead, UX Design</h2> -->
-                            
+                        </div>
+                        <div class="overview-right">
+                            <div class="timeline">
+                                <h2>Timeline</h2>
+                                <p>
+                                    July 2019 - Aug. 2019 (Research)<br>
+                                    Sept. 2020 – Oct. 2020 (Design) 
+                                </p>
+                            </div>
+                            <div class="tools">
+                                <h2>Tools</h2>
+                                <p>Sketch, Figma</p>
+                            </div>
+                            <div class="my-role"><h2>My Role</h2>
+                            <p>Project Lead, UX/UI Designer</p></div>
                         </div>
                     </div>
                     
@@ -220,7 +215,7 @@
 
                         <p>In the early stages of conceptualizing the potential layout for the website, we wanted to quickly visualize and test various ideas in a low cost and commitment manner. Paper prototyping allowed for rapid iteration—only allowing 5 minutes to come up with a design.</p>
 
-                        <h2>Grid for Eclectic Harmony</h2>
+                        <h2>Grid for <span class="eclectic">Eclectic</span> Harmony</h2>
                         <p>Throughout our rapid paper prototyping process, we kept in mind functionality, clarity, and visibility with each iteration. Some layouts emphasized the web player and others the programming schedule.</p>
                         <div class="figure">
                             <img src="img/wwr/imgcap2.png">
@@ -433,7 +428,12 @@
                 <!-- <div class="section-anchor"><a href="#prototype">Hi-Fi Prototype</a></div> -->
                 <!-- <div class="section-anchor"><a href="#reflection">Reflection</a></div> -->
 
-                <a href="#overview-section"><div class="first-child">Overview</div></a>
+                <div class="first-child navigation-desktop">
+                    <div><a href="sm.html">Prev</a></div>
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="wdc.html">Next</a></div>
+                </div>
+                <a href="#overview-section"><div>Overview</div></a>
                 <a href="#problem-section"><div>Problem</div></a>
                 <a href="#research-section"><div>User Research</div></a>
                 <a href="#branding-section"><div>Branding Activity</div></a>
@@ -444,14 +444,7 @@
             </div>
 
             <div id="links">
-                <!-- navigation -->
-                <div class="navigation">
-                    <div><a href="index.html">Home</a></div>
-                    <!-- <div><a href="sm.html">Prev</a></div> -->
-                    <div><a href="wdc.html">Next</a></div>
-                    <!-- Prev &nbsp; Home &nbsp; Next -->
-                </div>
-
+        
                 <!-- linkedin, github, email, copyright-->
                 <div class="icons">
                     <a href="mailto: hello@seangedorio.com"><img id="mail" src="img/icons/mail.png"></a>
@@ -463,5 +456,6 @@
             <!-- </div> -->
         </div>
         <script src="js/wwr.js" async defer></script>
+        <script src="js/cursor.js" ></script>
     </body>
 </html>

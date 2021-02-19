@@ -5,8 +5,10 @@ mouseMiddle = document.getElementById("mouse-inner");
 
 
 document.onmousemove = (e) => {
-mousePosX = e.pageX;
-mousePosY = e.pageY;
+// mousePosX = e.pageX;
+// mousePosY = e.pageY;
+mousePosX = e.clientX;
+mousePosY = e.clientY;
 };
 
 let delay = 6,
