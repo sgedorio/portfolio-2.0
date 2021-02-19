@@ -516,7 +516,8 @@ $column-spacing: 15rem;
         position: sticky;
 
         .first-child {
-            margin-top: $top-bottom/2;
+            // margin-top: $top-bottom/2;
+            margin-top: $top-bottom/2 + 1rem;
         }
     }
     
