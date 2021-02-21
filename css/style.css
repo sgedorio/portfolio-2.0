@@ -1063,7 +1063,7 @@ html a:hover {
   text-align: center;
 }
 
-.solution-button a {
+a.button {
   text-decoration: none;
   color: inherit;
 }

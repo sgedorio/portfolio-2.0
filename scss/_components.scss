@@ -122,11 +122,11 @@ $m-mid-d: 30px;
     white-space: nowrap;
     width: 90%;
     text-align: center;
+}
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+a.button {
+    text-decoration: none;
+    color: inherit;
 }
 
 .sm-button {
