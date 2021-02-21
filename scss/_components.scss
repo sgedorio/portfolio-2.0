@@ -1,5 +1,5 @@
 $m-circ-d: 48px;
-$m-mid-d: 24px;
+$m-mid-d: 30px;
 
 // $bg-big: rgb(228, 222, 222);
 // $bg-small: rgb(255, 230, 0);
@@ -17,12 +17,13 @@ $m-mid-d: 24px;
     margin: (-$m-circ-d/2) 0px 0px (-$m-circ-d/2);
     // background-color: $color-scheme;
     // border: 1px dotted $text-bg;
-    background-color: $text-bg;
-    border: 1px dotted $color-scheme;
+
+    // background-color: $text-bg;
+    // border: 1px dotted $color-scheme;
     opacity: 0.85;
     border-radius: 50%;
     pointer-events: none !important;
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+    // box-shadow: 0 0 16px rgba(255, 255, 255, 0);
     z-index: 1000;
 }
 
@@ -35,12 +36,17 @@ $m-mid-d: 24px;
     // background-color: $bg-small;
     // background-color: $text-bg;
     // border: 1px dotted $color-scheme;
-    background-color: $color-scheme;
-    border: 1px dotted $text-bg;
+    // background-color: $color-scheme;
+    // background-color: black;
+    // border: 1px dotted $text-bg;
     opacity: 0.85;
-    border-radius: 50%;
+    // border-radius: 50%;
     pointer-events: none !important;
     z-index: 1000;
+
+    img {
+        margin: auto;
+    }
 }
 
 .navigation-desktop {

@@ -984,27 +984,24 @@ html a:hover {
   width: 48px;
   height: 48px;
   margin: -24px 0px 0px -24px;
-  background-color: #f5eeeee0;
-  border: 1px dotted #43b649;
   opacity: 0.85;
   border-radius: 50%;
   pointer-events: none !important;
-  -webkit-box-shadow: 0 0 16px rgba(255, 255, 255, 0);
-          box-shadow: 0 0 16px rgba(255, 255, 255, 0);
   z-index: 1000;
 }
 
 #mouse-inner {
   position: fixed;
-  width: 24px;
-  height: 24px;
-  margin: -12px 0px 0px -12px;
-  background-color: #43b649;
-  border: 1px dotted #f5eeeee0;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0px 0px -15px;
   opacity: 0.85;
-  border-radius: 50%;
   pointer-events: none !important;
   z-index: 1000;
+}
+
+#mouse-inner img {
+  margin: auto;
 }
 
 .navigation-desktop {
