@@ -121,6 +121,14 @@ $column-spacing: 15rem;
         }
     }
 
+    //tall screens
+    @media (min-height: 1200px) {
+        #middle, #bottom {
+            margin-top: $column-spacing + 5.50rem;
+        }
+    }
+
+
     @media (max-width: 1280px) {
         width: 80%;
     }

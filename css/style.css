@@ -305,6 +305,12 @@ html a:hover {
   }
 }
 
+@media (min-height: 1200px) {
+  #index #middle, #index #bottom {
+    margin-top: 20.5rem;
+  }
+}
+
 @media (max-width: 1280px) {
   #index {
     width: 80%;
