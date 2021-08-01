@@ -357,7 +357,7 @@ html a:hover {
             flex-direction: column;
   }
   #index #bottom #description {
-    width: 60%;
+    width: 80%;
   }
   #index #bottom #description p:not(:last-child) {
     margin-bottom: 1.875rem;
