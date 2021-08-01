@@ -53,7 +53,7 @@ $column-spacing: 15rem;
         justify-content: space-between;
 
         #description {
-            width: 350px;
+            width: 375px;
             p:not(:last-child) {
                 margin-bottom: $top-bottom / 2;
             }
@@ -125,7 +125,7 @@ $column-spacing: 15rem;
     //tall screens
     @media (min-height: 1200px) {
         #middle, #bottom {
-            margin-top: $column-spacing + 5.50rem;
+            margin-top: $column-spacing + 22rem;
         }
     }
 

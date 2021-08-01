@@ -238,7 +238,7 @@ html a:hover {
 }
 
 #index #bottom #description {
-  width: 350px;
+  width: 375px;
 }
 
 #index #bottom #description p:not(:last-child) {
@@ -308,7 +308,7 @@ html a:hover {
 
 @media (min-height: 1200px) {
   #index #middle, #index #bottom {
-    margin-top: 20.5rem;
+    margin-top: 37rem;
   }
 }
 
